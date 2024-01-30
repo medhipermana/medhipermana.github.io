@@ -154,7 +154,7 @@
 					</div>
 					<!-- Search -->
 					<div class="search-box">
-						<form method="post" action="https://html.themexriver.com/bloxic/contact.html">
+						<form method="post" href="">
 							<div class="form-group">
 								<input type="search" name="search-field" value="" placeholder="SEARCH HERE" required>
 								<button type="submit"><span class="icon flaticon-search-1"></span></button>
@@ -403,13 +403,14 @@
 	<div class="search-popup">
 		<div class="color-layer"></div>
 		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
-		<form method="post" action="https://html.themexriver.com/bloxic/blog.html">
+		<form method="" onsubmit="refreshPage()">
 			<div class="form-group">
 				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
 				<button type="submit"><i class="fa fa-search"></i></button>
 			</div>
 		</form>
 	</div>
+	
 	<!-- End Search Popup -->
 
 	<!-- Scroll To Top -->
@@ -435,6 +436,14 @@
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/script.js"></script>
 
+	<script>
+		function refreshPage() {
+			// Mengarahkan kembali ke halaman yang sama (current page)
+			location.reload();
+			return false; // Menghentikan proses formulir standar
+		}
+	</script>
+	
 	<script>
 		var currentPage = 1;
 		var productsPerPage = 12; // Change this to the number of products per page
