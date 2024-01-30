@@ -14341,12 +14341,16 @@ legend {
 .app-logo {
   height: 23px;
   width: 97px;
-  background: url("../../images/logo-inverse.png"); }
+  background: url("../../images/logo-inverse.png"); 
+}
 
 .app-logo-inverse {
-  height: 23px;
-  width: 97px;
-  background: url("/Admin/images/logo.png"); }
+  height: 100px;
+  width: 110px;
+  background: url("/Admin/images/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .app-login-box .app-logo {
   margin-bottom: 3rem; }
