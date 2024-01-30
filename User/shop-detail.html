@@ -181,16 +181,16 @@
 									<div class="swiper-container content-carousel">
 										<div class="swiper-wrapper" id="">
 											<div class="swiper-slide">
-												<figure class="image"><a href="images/resource/products/1.jpg" class="lightbox-image"><img src="images/resource/products/1.jpg" alt=""></a></figure>
+												<figure class="image"><a href="" class="lightbox-image"><img src="images/resource/products/5.jpg" alt=""></a></figure>
 											</div>
 											<div class="swiper-slide">
-												<figure class="image"><a href="images/resource/products/1.jpg" class="lightbox-image"><img src="images/resource/products/1.jpg" alt=""></a></figure>
+												<figure class="image"><a href="" class="lightbox-image"><img src="images/resource/products/5.jpg" alt=""></a></figure>
 											</div>
 											<div class="swiper-slide">
-												<figure class="image"><a href="images/resource/products/1.jpg" class="lightbox-image"><img src="images/resource/products/1.jpg" alt=""></a></figure>
+												<figure class="image"><a href="" class="lightbox-image"><img src="images/resource/products/5.jpg" alt=""></a></figure>
 											</div>
 											<div class="swiper-slide">
-												<figure class="image"><a href="images/resource/products/1.jpg" class="lightbox-image"><img src="images/resource/products/1.jpg" alt=""></a></figure>
+												<figure class="image"><a href="" class="lightbox-image"><img src="images/resource/products/5.jpg" alt=""></a></figure>
 											</div>
 										</div>
 									</div>
@@ -198,16 +198,16 @@
 									<div class="swiper-container thumbs-carousel">
 										<div class="swiper-wrapper" id="">
 											<div class="swiper-slide">
-												<figure class="thumb"><img src="images/resource/products/1.jpg" alt=""></figure>
+												<figure class="thumb"><img src="images/resource/products/5.jpg" alt=""></figure>
 											</div>
 											<div class="swiper-slide">
-												<figure class="thumb"><img src="images/resource/products/1.jpg" alt=""></figure>
+												<figure class="thumb"><img src="images/resource/products/5.jpg" alt=""></figure>
 											</div>
 											<div class="swiper-slide">
-												<figure class="thumb"><img src="images/resource/products/1.jpg" alt=""></figure>
+												<figure class="thumb"><img src="images/resource/products/5.jpg" alt=""></figure>
 											</div>
 											<div class="swiper-slide">
-												<figure class="thumb"><img src="images/resource/products/1.jpg" alt=""></figure>
+												<figure class="thumb"><img src="images/resource/products/5.jpg" alt=""></figure>
 	
 											</div>
 										</div>
@@ -527,18 +527,30 @@
 		// console.log(namaValue);
 
 		function fillCarouselsWithJQuery(randomObject) {
-			// Mengisi gambar untuk thumbsCarousel
-			$('.thumbs-carousel .swiper-slide').each(function(index) {
-				var imageSrc = randomObject.image[index];
-				$(this).find('img').attr('src', imageSrc).attr('alt', randomObject.image[index]);
-			});
+    // Mengisi gambar untuk thumbsCarousel
+    $('.thumbs-carousel .swiper-slide').each(function(index) {
+        if (index < randomObject.image.length) {
+            var imageSrc = randomObject.image[index];
+            $(this).find('img').attr('src', imageSrc).attr('alt', randomObject.image[index]);
+        }
+    });
 
-			// Mengisi gambar untuk contentCarousel
-			$('.content-carousel .swiper-slide').each(function(index) {
-				var imageSrc = randomObject.image[index];
-				$(this).find('img').attr('src', imageSrc).attr('alt', randomObject.image[index]);
-			});
-		}
+    // Mengisi gambar untuk contentCarousel
+    $('.content-carousel .swiper-slide').each(function(index) {
+        if (index < randomObject.image.length) {
+            var imageSrc = randomObject.image[index];
+            $(this).find('a').attr('href', imageSrc);
+            $(this).find('img').attr('src', imageSrc).attr('alt', randomObject.image[index]);
+        }
+    });
+}
+$('.content-carousel .swiper-slide a.lightbox-image').magnificPopup({
+    type: 'image',
+    gallery: {
+        enabled: true
+    }
+});
+
 
 		$(document).ready(function () {
 			$('.tab-btn').click(function () {
