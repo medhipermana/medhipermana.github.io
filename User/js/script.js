@@ -110,9 +110,9 @@
 		}
 	}
 	
-	if ($('.main-header .header-lower .main-menu .navigation').length) {
-		dynamicCurrentMenuClass($('.main-header .header-lower .main-menu .navigation'));
-	}
+	// if ($('.main-header .header-lower .main-menu .navigation').length) {
+	// 	dynamicCurrentMenuClass($('.main-header .header-lower .main-menu .navigation'));
+	// }
 	
 	
 	//Header Search
