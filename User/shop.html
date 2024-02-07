@@ -153,7 +153,7 @@
 					</div>
 					<!-- Search -->
 					<div class="search-box">
-						<form method="post" href="">
+						<form method="post" action="https://html.themexriver.com/bloxic/contact.html">
 							<div class="form-group">
 								<input type="search" name="search-field" value="" placeholder="SEARCH HERE" required>
 								<button type="submit"><span class="icon flaticon-search-1"></span></button>
@@ -402,9 +402,9 @@
 	<div class="search-popup">
 		<div class="color-layer"></div>
 		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
-		<form method="" onsubmit="refreshPage()">
+		<form method="post" action="shop.html"> <!-- Change action to the desired page -->
 			<div class="form-group">
-				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+				<input type="text" name="search-field" value="" placeholder="Search Here" required="">
 				<button type="submit"><i class="fa fa-search"></i></button>
 			</div>
 		</form>
@@ -436,36 +436,28 @@
 	<script src="js/script.js"></script>
 
 	<script>
-		function refreshPage() {
-			// Mengarahkan kembali ke halaman yang sama (current page)
-			location.reload();
-			return false; // Menghentikan proses formulir standar
-		}
-	</script>
-	
-	<script>
 		var currentPage = 1;
 		var productsPerPage = 12; // Change this to the number of products per page
-
+	
 		function changePage(page) {
 			currentPage = page;
 			showProducts();
-
+	
 			// Remove "active" class from all pagination links
 			var paginationLinks = document.querySelectorAll('#pagination li a');
 			paginationLinks.forEach(link => link.classList.remove('active'));
-
+	
 			// Add "active" class to the clicked pagination link
 			paginationLinks[currentPage].classList.add('active');
 		}
-
+	
 		function prevPage() {
 			if (currentPage > 1) {
 				currentPage--;
 				showProducts();
 			}
 		}
-
+	
 		function nextPage() {
 			// Assuming data.length is the total number of products
 			var totalPages = Math.ceil(data.length / productsPerPage);
@@ -474,7 +466,7 @@
 				showProducts();
 			}
 		}
-
+	
 		function formatToRupiah(angka) {
 			if (typeof angka === "string") {
 				angka = parseFloat(angka);
@@ -488,68 +480,82 @@
 				return "Rp. 0";
 			}
 		}
-
-		function showProducts() {
-			// Your existing code to fetch and display products
+	
+		function showProducts(searchQuery = "") {
 			fetch('../data_produk.json')
 				.then(response => response.json())
 				.then(data => {
 					var produkContainer = document.getElementById('list-product');
 					var afterDiscount = 0;
-
-					var startIndex = (currentPage - 1) * productsPerPage;
-					var endIndex = startIndex + productsPerPage;
-					var currentProducts = data.slice(startIndex, endIndex);
-					var widgetContent = document.getElementById('widget-content');
-
+	
+					var filteredProducts = data.filter(produk => {
+						// Menggunakan toLowerCase() untuk pencarian case-insensitive
+						return produk.title.toLowerCase().includes(searchQuery.toLowerCase());
+					});
+	
 					produkContainer.innerHTML = ""; // Clear previous products
-
-					currentProducts.forEach(produk => {
+	
+					filteredProducts.forEach(produk => {
 						afterDiscount = (produk.price / 100) * produk.discount;
 						var shopItem = document.createElement('div');
 						shopItem.className = 'shop-item col-lg-4 col-md-4 col-sm-12';
 						shopItem.innerHTML = `
-                        <div class="inner-box">
-                            <div class="image">
-                                <a href="shop-detail.html?id=${produk.id}"><img src="${produk.image[0]}" alt="${produk.image}" /></a>
-                            </div>
-                            <div class="lower-content">
-                                <h6><a href="shop-detail.html?id=${produk.id}">${produk.title}</a></h6>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="price"><span>${formatToRupiah(produk.price)}</span>${formatToRupiah(produk.price - afterDiscount)}</div>
-                                </div>
-                            </div>
-                        </div>
-                    `;
-					var widgetHTML = `
-				<div class="content">
-					<div class="title">Trending</div>
-						<h4>2024 <span>Desain Rumah</span> <br> Minimalis</h4>
-						<a class="buy-btn theme-btn" href="shop-detail.html?id=${produk.id}">Buy Now</a>
-						<div class="icon">
-							<a href="shop-detail.html?id=${produk.id}"><img src="${produk.image[0]}" alt="${produk.image}" /></a>
-						</div>
-					</div>
-				<div class="vector-icon" style="background-image: url(images/icons/vector-3.png)"></div>
-				`;
-
-			widgetContent.innerHTML = widgetHTML;
+							<div class="inner-box">
+								<div class="image">
+									<a href="shop-detail.html?id=${produk.id}"><img src="${produk.image[0]}" alt="${produk.image}" /></a>
+								</div>
+								<div class="lower-content">
+									<h6><a href="shop-detail.html?id=${produk.id}">${produk.title}</a></h6>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="price"><span>${formatToRupiah(produk.price)}</span>${formatToRupiah(produk.price - afterDiscount)}</div>
+									</div>
+								</div>
+							</div>
+						`;
+						var widgetContent = document.getElementById('widget-content');
+						var widgetHTML = `
+							<div class="content">
+								<div class="title">Trending</div>
+								<h4>2024 <span>Desain Rumah</span> <br> Minimalis</h4>
+								<a class="buy-btn theme-btn" href="shop-detail.html?id=${produk.id}">Buy Now</a>
+								<div class="icon">
+									<a href="shop-detail.html?id=${produk.id}"><img src="${produk.image[0]}" alt="${produk.image}" /></a>
+								</div>
+							</div>
+							<div class="vector-icon" style="background-image: url(images/icons/vector-3.png)"></div>
+						`;
+	
+						widgetContent.innerHTML = widgetHTML;
 						produkContainer.appendChild(shopItem);
-
+	
 						// Trigger reflow to apply CSS transition
 						void shopItem.offsetWidth;
-
+	
 						// Add visible class to apply opacity transition
 						shopItem.classList.add('visible');
+	
 					});
 				})
 				.catch(error => console.error('Error fetching data:', error));
 		}
-
-		
+	
+		// Function to close the search popup
+		function closeSearchPopup() {
+			var searchPopup = document.querySelector('.search-popup');
+			searchPopup.classList.remove('active');
+		}
+	
+		// Function to handle search submission
+		document.querySelector('.search-popup form').addEventListener('submit', function(event) {
+			event.preventDefault();
+			var searchQuery = this.querySelector('input[name="search-field"]').value;
+			showProducts(searchQuery);
+			closeSearchPopup(); // Close the search popup after search
+		});
+	
 		// Initial load
 		showProducts();
-
+	
 	</script>
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
