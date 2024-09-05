@@ -6,18 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Bello Dashboard.</title>
+    <title>Analytics Dashboard - This is an example dashboard created using build-in elements and components.</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
     <!-- <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Third-party stylesheets -->
     <link rel="stylesheet" href="./vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./vendors/ionicons-npm/css/ionicons.css">
     <link rel="stylesheet" href="./vendors/linearicons-master/dist/web-font/style2.css">
     <link rel="stylesheet" href="./vendors/pixeden-stroke-7-icon-master/pe-icon-7-stroke/dist/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
+    <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet"/>
+
+    <!-- Custom stylesheets -->
     <link href="./styles/css/base.css" rel="stylesheet">
+
+
+    <style>
+
+    .slick-track {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slider-item {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        transition: all .2s;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .slick-center .slider-item {
+        background: #dee2e6;
+        color: #495057;
+    }
+
+    .box {
+        position: relative;
+        max-width: 80%;
+        max-height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        object-position: center center;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        -webkit-transition: .5s ease;
+        -moz-transition: .5s ease;
+        -ms-transition: .5s ease;
+        -o-transition: .5s ease;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .slider-item:hover .image {
+        opacity: 0.3;
+    }
+
+    .slider-item:hover .middle {
+        opacity: 1;
+    }
+
+    </style>
 </head>
 
 <body>
@@ -155,13 +241,13 @@
                                 </a>
                                 <ul>
                                     <li>
-                                        <a href="index.html" class="mm-active">
+                                        <a href="index.html" class="">
                                             <i class="metismenu-icon"></i>
                                             History Payment
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="manager-data.html" class="">
+                                        <a href="manager-data.html" class="mm-active">
                                             <i class="metismenu-icon"></i>
                                             Entry Data
                                         </a>
@@ -178,181 +264,79 @@
                         <div class="page-title-wrapper">
                             <div class="page-title-heading">
                                 <div class="font-icon-wrapper font-icon-lg">
-                                    <i class="lnr-database icon-gradient bg-night-fade"></i>
+                                    <i class="lnr-file-add icon-gradient bg-night-fade"></i>
                                 </div>
                                 <div>
-                                    Dashboard
-                                    <div class="page-title-subheading">Payment History Midtrans</div>
+                                    Form Validation
+                                    <div class="page-title-subheading">Input Data for Asset Design.</div>
                                 </div>
-                            </div>
-
+                            </div>                        
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 col-xl-3">
-                            <div
-                                class="card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-success border-success">
-                                <div class="widget-chat-wrapper-outer">
-                                    <div class="widget-chart-content pt-3 pl-3 pb-1">
-                                        <div class="widget-chart-flex">
-                                            <div class="widget-numbers">
-                                                <div class="widget-chart-flex">
-                                                    <div class="fsize-4">
-                                                        <small class="opacity-5">Rp</small>
-                                                        <span>56.500.000</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h6 class="widget-subheading mb-0 opacity-5">sales last month</h6>
-                                    </div>
-                                    <div class="no-gutters widget-chart-wrapper mt-3 mb-3 pl-2 he-auto row">
-                                        <div class="col-md-9">
-                                            <div id="dashboard-sparklines-1"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3">
-                            <div
-                                class="card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-primary border-primary">
-                                <div class="widget-chat-wrapper-outer">
-                                    <div class="widget-chart-content pt-3 pl-3 pb-1">
-                                        <div class="widget-chart-flex">
-                                            <div class="widget-numbers">
-                                                <div class="widget-chart-flex">
-                                                    <div class="fsize-4">
-                                                        <small class="opacity-5">Rp</small>
-                                                        <span>120.000.000</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h6 class="widget-subheading mb-0 opacity-5">sales Income</h6>
-                                    </div>
-                                    <div class="no-gutters widget-chart-wrapper mt-3 mb-3 pl-2 he-auto row">
-                                        <div class="col-md-9">
-                                            <div id="dashboard-sparklines-2"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3">
-                            <div
-                                class="card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-warning border-warning">
-                                <div class="widget-chat-wrapper-outer">
-                                    <div class="widget-chart-content pt-3 pl-3 pb-1">
-                                        <div class="widget-chart-flex">
-                                            <div class="widget-numbers">
-                                                <div class="widget-chart-flex">
-                                                    <div class="fsize-4">
-                                                        <small class="opacity-5">Rp</small>
-                                                        <span>128.600.000</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h6 class="widget-subheading mb-0 opacity-5">last month sales</h6>
-                                    </div>
-                                    <div class="no-gutters widget-chart-wrapper mt-3 mb-3 pl-2 he-auto row">
-                                        <div class="col-md-9">
-                                            <div id="dashboard-sparklines-3"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3">
-                            <div
-                                class="card mb-3 widget-chart widget-chart2 text-left card-btm-border card-shadow-danger border-danger">
-                                <div class="widget-chat-wrapper-outer">
-                                    <div class="widget-chart-content pt-3 pl-3 pb-1">
-                                        <div class="widget-chart-flex">
-                                            <div class="widget-numbers">
-                                                <div class="widget-chart-flex">
-                                                    <div class="fsize-4">
-                                                        <small class="opacity-5">Rp</small>
-                                                        <span>57.000.000</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <h6 class="widget-subheading mb-0 opacity-5">total revenue</h6>
-                                    </div>
-                                    <div class="no-gutters widget-chart-wrapper mt-3 mb-3 pl-2 he-auto row">
-                                        <div class="col-md-9">
-                                            <div id="dashboard-sparklines-4"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3">
-                        <div class="card-header-tab card-header">
-                            <div class="card-header-title font-size-lg text-capitalize font-weight-normal">
-                                <i class="header-icon lnr-laptop-phone mr-3 text-muted opacity-6"></i>
-                                History Payment
-                            </div>
-                            <div class="btn-actions-pane-right actions-icon-btn">
-                                <div class="btn-group dropdown">
-                                    <div tabindex="-1" role="menu" aria-hidden="true"
-                                        class="dropdown-menu-right rm-pointers dropdown-menu-shadow dropdown-menu-hover-link dropdown-menu">
-                                        <h6 tabindex="-1" class="dropdown-header">Header</h6>
-                                        <button type="button" tabindex="0" class="dropdown-item">
-                                            <i class="dropdown-icon lnr-inbox"></i>
-                                            <span>Menus</span>
-                                        </button>
-                                        <button type="button" tabindex="0" class="dropdown-item">
-                                            <i class="dropdown-icon lnr-file-empty"></i>
-                                            <span>Settings</span>
-                                        </button>
-                                        <button type="button" tabindex="0" class="dropdown-item">
-                                            <i class="dropdown-icon lnr-book"></i>
-                                            <span>Actions</span>
-                                        </button>
-                                        <div tabindex="-1" class="dropdown-divider"></div>
-                                        <div class="p-3 text-right">
-                                            <button class="mr-2 btn-shadow btn-sm btn btn-link">View Details</button>
-                                            <button class="mr-2 btn-shadow btn-sm btn btn-primary">Action</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="main-card mb-3 card">
                         <div class="card-body">
-                            <table style="width: 100%;" id="example"
-                                class="table table-hover table-striped table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>DATE & TIME</th>
-                                        <th>OREDER ID</th>
-                                        <th>TRANSACTION TYPE</th>
-                                        <th>CHANNEL</th>
-                                        <th>STATUS</th>
-                                        <th>AMOUNT</th>
-                                        <th>CUSTOMER E-MAIL</th>
-
-                                    </tr>
-                                </thead>
-                                <tbody id="data-isi"> </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>DATE & TIME</th>
-                                        <th>OREDER ID</th>
-                                        <th>TRANSACTION TYPE</th>
-                                        <th>CHANNEL</th>
-                                        <th>STATUS</th>
-                                        <th>AMOUNT</th>
-                                        <th>CUSTOMER E-MAIL</th>
-                                    </tr>
-                                </tfoot>
-                            </table>
+                            <h5 class="card-title">INPUT DATA ASSET</h5>
+                            <form id="assetForm" class="col-md-12 mx-auto" action="./manager-data.html">                   
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <!-- <div class="form-group">
+                                            <label for="fileInput1" class="font-weight-bold">Upload Image (max 5 file) </label>
+                                            <input type="file" id="fileInput1" multiple  accept="image/jpg, image/jpeg, image/png"
+                                            data-max-file-size="3MB"
+                                            data-max-files="3" />
+                                        </div> -->
+                                        <div class="slick-slider-responsive" id="view-data">                                                                                     
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label class="font-weight-bold" for="title">Title </label>
+                                            <div>
+                                                <input type="text" class="form-control" id="title" name="title" placeholder="Title" disabled style="background-color: #fff;" >
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="font-weight-bold" for="price">Price </label>
+                                            <div>
+                                                <input type="text" class="form-control" id="price" name="price" placeholder="Price" disabled style="background-color: #fff;">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="font-weight-bold" for="discount">Discount </label>
+                                            <div>
+                                                <input type="inputtext" max="100" class="form-control" id="discount" name="discount" placeholder="Discount" disabled style="background-color: #fff;">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="font-weight-bold" for="linkDrive">Link Drive </label>
+                                            <div>
+                                                <input type="url" class="form-control" id="link" name="linkDrive" placeholder="Link Drive" disabled style="background-color: #fff;">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="font-weight-bold" for="productDetails">Product Details</label>
+                                            <textarea class="form-control" id="productDetail" name="productDetails" rows="5" placeholder="Product Details" disabled style="background-color: #fff;"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="font-weight-bold" for="additionalInfo">Additional Information</label>
+                                            <textarea class="form-control" id="additionalInformation" name="additionalInfo" rows="4" placeholder="Additional Information" disabled style="background-color: #fff;"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="font-weight-bold" for="moreDetails">More Details</label>
+                                            <div>
+                                                <textarea type="text" class="form-control" id="more" name="moreDetails" placeholder="More Details" disabled style="background-color: #fff;"></textarea> 
+                                            </div>
+                                        </div>
+                                        <div class="form-group mt-3 d-flex justify-content-end">
+                                            <button type="button" class="btn btn-primary" onclick="goBack()">Back</button>
+                                        </div>
+                                    </div>
+                                </div>                           
+                            </form>                        
                         </div>
                     </div>
-                </div>
+                    
+                </div>              
             </div>
         </div>
     </div>
@@ -804,24 +788,22 @@
     </div>
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <!-- plugin dependencies -->
-    <script type="text/javascript" src="./vendors/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="./vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="./vendors/moment/moment.js"></script>
-    <script type="text/javascript" src="./vendors/metismenu/dist/metisMenu.js"></script>
-    <script type="text/javascript" src="./vendors/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
-    <script type="text/javascript" src="./vendors/jquery-circle-progress/dist/circle-progress.min.js"></script>
-    <script type="text/javascript" src="./vendors/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-    <script type="text/javascript" src="./vendors/toastr/build/toastr.min.js"></script>
-    <script type="text/javascript" src="./vendors/jquery.fancytree/dist/jquery.fancytree-all-deps.min.js"></script>
-    <script type="text/javascript" src="./vendors/apexcharts/dist/apexcharts.min.js"></script>
-    <script type="text/javascript" src="./vendors/bootstrap-table/dist/bootstrap-table.min.js"></script>
-    <script type="text/javascript" src="./vendors/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="./vendors/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
-    <script type="text/javascript" src="./vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script type="text/javascript" src="./vendors/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js">
-    </script>
+   <!-- Third-party scripts -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+   <script type="text/javascript" src="./vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script type="text/javascript" src="./vendors/moment/moment.js"></script>
+   <script type="text/javascript" src="./vendors/metismenu/dist/metisMenu.js"></script>
+   <script type="text/javascript" src="./vendors/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
+   <script type="text/javascript" src="./vendors/jquery-circle-progress/dist/circle-progress.min.js"></script>
+   <script type="text/javascript" src="./vendors/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+   <script type="text/javascript" src="./vendors/toastr/build/toastr.min.js"></script>
+   <script type="text/javascript" src="./vendors/jquery.fancytree/dist/jquery.fancytree-all-deps.min.js"></script>
+   <script type="text/javascript" src="./vendors/apexcharts/dist/apexcharts.min.js"></script>
+   <script type="text/javascript" src="./vendors/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="./vendors/slick-carousel/slick/slick.min.js"></script>
-    <!-- custome.js -->
+    
+    <!-- Custom scripts -->
     <script type="text/javascript" src="./js/charts/apex-charts.js"></script>
     <script type="text/javascript" src="./js/circle-progress.js"></script>
     <script type="text/javascript" src="./js/demo.js"></script>
@@ -829,69 +811,116 @@
     <script type="text/javascript" src="./js/toastr.js"></script>
     <script type="text/javascript" src="./js/treeview.js"></script>
     <script type="text/javascript" src="./js/form-components/toggle-switch.js"></script>
-    <script type="text/javascript" src="./js/tables.js"></script>
-    <script type="text/javascript" src="./js/carousel-slider.js"></script>
+    <script type="text/javascript" src="./js/form-components/form-validation.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+    <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>    
+    <script src="js/carousel-slider.js"></script>
     <script type="text/javascript" src="./js/app.js"></script>
-
+  
     <script>
-         function formatToRupiah(angka) {
-        if (typeof angka === "string") {
-            // Mengonversi string menjadi angka (number)
-            angka = parseFloat(angka);
+
+    $(document).ready(function () {
+        
+    // Mendapatkan nilai parameter dari URL
+    function getParameterValue(parameterName) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(parameterName);
         }
-        if (typeof angka === "number") {
-            var reverse = angka.toString().split("").reverse().join(""),
-            ribuan = reverse.match(/\d{1,3}/g);
-            ribuan = ribuan.join(".").split("").reverse().join("");
-            return "Rp. " + ribuan;
-        } else {
-            return "Rp. 0";
-        }
-        }
+
+        // Mengambil nilai parameter "id" dari URL
+        var namaValue = Number(getParameterValue('id'));
+        console.log(namaValue);
+
         // Mengambil data JSON eksternal
-        fetch('../data_bayar.json')
-            .then(response => response.json())
-            .then(data => {
+        $.ajax({
+            url: '../data_produk.json',
+            dataType: 'json',
+            success: function (data) {
                 // Mendapatkan elemen container
-                var produkContainer = document.getElementById('data-isi');
-    
-                // Menampilkan data JSON dalam HTML
-                data.forEach(produk => {
-                    // Tentukan warna badge berdasarkan status
-                    var badgeColor;
-                    if (produk.status === 'Rejected') {
-                        badgeColor = 'badge-danger';
-                    } else if (produk.status === 'Approved') {
-                        badgeColor = 'badge-success';
-                    } else if (produk.status === 'Pending') {
-                        badgeColor = 'badge-warning'; // Warna untuk status 'Pending'
-                    } else if (produk.status === 'Settlement') {
-                        badgeColor = 'badge-info'; // Warna untuk status 'Settlement'
-                    } else if (produk.status === 'Expired') {
-                        badgeColor = 'badge-secondary'; // Warna untuk status 'Expired'
-                    } else {
-                        badgeColor = 'badge-secondary'; // Default jika status tidak dikenali
+                var produkContainer = $('#view-data');
+                // Create a FilePond instance
+                FilePond.registerPlugin(FilePondPluginImagePreview, FilePondPluginImageTransform);
+        const pond = FilePond.create($('input[type="file"]')[0]);
+        pond.setOptions({
+            imageResizeTargetWidth: 600,
+            imageCropAspectRatio: 1,
+            imageTransformVariants: {
+        thumb_medium_: (transforms) => {
+            transforms.resize = {
+                size: {
+                    width: 100,
+                    height: 100,
+                },
+            };
+            return transforms;
+        },
+        thumb_small_: (transforms) => {
+            transforms.resize = {
+                size: {
+                    width: 80,
+                    height: 80,
+                },
+            };
+            return transforms;
+        },
+            },
+        });
+        let title=$('#title').val('');
+        let price=$('#price').val('');
+        let discount=$('#discount').val('');
+        let link=$('#link').val('');
+        let productDetail=$('#productDetail').val('');
+        let additionalInformation=$('#additionalInformation').val('');
+        let more=$('#more').val('');
+
+
+                // Menampilkan data JSON dalam HTML dengan data id yang telah dipilih
+                $.each(data, function (index, produk) {
+                    if (produk.id === namaValue) {
+                        var produkHTML = `                          
+                                        <div>
+                                            <div class="slider-item">
+                                                <div class="box">
+                                                    <img src="${produk.image[0]}" alt="" class="image">
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="slider-item">
+                                                <div class="box">
+                                                    <img src="${produk.image[1]}" alt="" class="image">
+                                                </div>
+                                               
+                                            </div>
+                                        </div>                         
+                        `;
+                        produkContainer.append(produkHTML);
+                        title.val(produk.title);
+                        price.val(produk.price);
+                        discount.val(produk.discount);
+                        link.val(produk.link);
+                        productDetail.val(produk.product_detail);
+                        additionalInformation.val(produk.additional_information);
+                        more.val(produk.more_detail);
                     }
-    
-                    produkContainer.innerHTML += `
-                    <tr>
-                        <td>${produk.date}</td>
-                        <td>${produk.order}</td>
-                        <td>${produk.transaction}</td>
-                        <td>${produk.channel}</td>
-                        <td>
-                            <div class="badge ${badgeColor} ml-2">${produk.status}</div>
-                        </td>
-                        <td>${formatToRupiah(produk.amount)}</td>
-                        <td>${produk.email}</td>
-                    </tr>
-                    `;
                 });
-            })
-            .catch(error => console.error('Error fetching data:', error));
+            },
+            error: function (error) {
+                console.error('Error fetching data:', error);
+            }
+        });
+                          // Get a reference to the file input element 
+    });
+    
     </script>
-    
-    
+    <script>
+function goBack() {
+    window.history.back();
+}
+</script>
+  
 </body>
 
 </html>
