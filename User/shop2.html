@@ -69,7 +69,7 @@
 					<div class="d-flex justify-content-between align-items-center">
 						<!-- Logo -->
 						<div class="logo">
-							<a href="shop.html" title=""><img src="images/logo.png" alt="" title=""></a>
+							<a href="shop2.html" title=""><img src="images/logo.png" alt="" title=""></a>
 						</div>
 
 						
@@ -120,13 +120,30 @@
 										<span class="icon-bar"></span>
 									</button>
 								</div>
-
+								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
-										<li class="dropdown"><a href="/User/pages-login-boxed.html">Login</a>
+									<ul class="navigation clearfix">									
+										<li class="m-2"><img width=35" class="rounded" src="images/icons/user.png" alt="">
 										</li>
+										<li class="dropdown"><a href="#">Medhi</a>
+										</li>												 
 									</ul>
 								</div>
+								<!-- <div class="d-flex flex-row-reverse bd-highlight">
+									<div class="p-2 bd-highlight">
+										<ul class="navigation clearfix">
+											<li class="dropdown"><a href="#">User1</a></li>
+										</ul>
+									</div>
+									<div class="p-2 bd-highlight">
+										<div class="widget-content-left mr-3">
+											<div class="widget-content-left">
+												<img width="42" class="rounded" src="images/icons/user.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div> -->
+								
 
 								
 
@@ -139,7 +156,6 @@
 							<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
 
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -150,7 +166,7 @@
 				<div class="menu-backdrop"></div>
 				<div class="close-btn"><span class="icon flaticon-multiply"></span></div>
 				<nav class="menu-box">
-					<div class="nav-logo"><a href="shop.html"><img src="images/mobile-logo.png" alt="" title=""></a>
+					<div class="nav-logo"><a href="shop2.html"><img src="images/mobile-logo.png" alt="" title=""></a>
 					</div>
 					<!-- Search -->
 					<div class="search-box">
@@ -176,7 +192,7 @@
 			<div class="auto-container">
 				<h2>Shop Page</h2>
 				<ul class="bread-crumb clearfix">
-					<li><a href="shop.html"></a>Shop Page</li>
+					<li><a href="shop2.html"></a>Shop Page</li>
 				</ul>
 			</div>
 		</section>
@@ -333,7 +349,7 @@
 								<div class="footer-column col-lg-7 col-md-6 col-sm-12" id="contact-info">
 									<div class="footer-widget links-widget">
 										<!-- Logo -->
-										<div class="logo"><a href="shop.html"><img src="images/logo.png" alt=""
+										<div class="logo"><a href="shop2.html"><img src="images/logo.png" alt=""
 													title=""></a></div>
 										<div class="text"> </div>
 										<ul class="contact-list">
@@ -402,7 +418,7 @@
 	<div class="search-popup">
 		<div class="color-layer"></div>
 		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
-		<form method="post" action="shop.html"> <!-- Change action to the desired page -->
+		<form method="post" action="shop2.html"> <!-- Change action to the desired page -->
 			<div class="form-group">
 				<input type="text" name="search-field" value="" placeholder="Search Here" required="">
 				<button type="submit"><i class="fa fa-search"></i></button>
@@ -502,10 +518,10 @@
 						shopItem.innerHTML = `
 							<div class="inner-box">
 								<div class="image">
-									<a href="shop-detail.html?id=${produk.id}"><img src="${produk.image[0]}" alt="${produk.image}" /></a>
+									<a href="shop-detail2.html?id=${produk.id}"><img src="${produk.image[0]}" alt="${produk.image}" /></a>
 								</div>
 								<div class="lower-content">
-									<h6><a href="shop-detail.html?id=${produk.id}">${produk.title}</a></h6>
+									<h6><a href="shop-detail2.html?id=${produk.id}">${produk.title}</a></h6>
 									<div class="d-flex justify-content-between align-items-center">
 										<div class="price"><span>${formatToRupiah(produk.price)}</span>${formatToRupiah(produk.price - afterDiscount)}</div>
 									</div>
@@ -517,9 +533,9 @@
 							<div class="content">
 								<div class="title">Trending</div>
 								<h4>2024 <span>Desain Rumah</span> <br> Minimalis</h4>
-								<a class="buy-btn theme-btn" href="shop-detail.html?id=${produk.id}">Buy Now</a>
+								<a class="buy-btn theme-btn" href="shop-detail2.html?id=${produk.id}">Buy Now</a>
 								<div class="icon">
-									<a href="shop-detail.html?id=${produk.id}"><img src="${produk.image[0]}" alt="${produk.image}" /></a>
+									<a href="shop-detail2.html?id=${produk.id}"><img src="${produk.image[0]}" alt="${produk.image}" /></a>
 								</div>
 							</div>
 							<div class="vector-icon" style="background-image: url(images/icons/vector-3.png)"></div>
