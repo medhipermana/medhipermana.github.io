@@ -15,17 +15,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
 
 <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
 <link rel="icon" href="images/favicon1.png" type="image/x-icon">
-<link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
-<link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet"/>
-
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -146,11 +148,10 @@
 	<!-- Page Title -->
     <section class="page-title">
         <div class="auto-container">
-			<h2>Checkout Page</h2>
+			<h2>History Payment</h2>
 			<ul class="bread-crumb clearfix">
 				<li><a href="shop2.html">Shop</a></li>
-				<li><a href="shop-detail2.html">Shop Detail</a></li>
-				<li>Checkout</li>
+				<li><a href="history.html">History Payment</a></li>
 			</ul>
         </div>
     </section>
@@ -158,32 +159,136 @@
 	
 	<!-- Checkout Section -->
 	<section class="checkout-section">
-		<div class="row justify-content-center">
-			
-				<!-- Form Column -->
-				
-				<!-- Order Summary Column -->
-				
-				<div class="col-md-6 col-sm-12">
-					<h4>Order Summary</h4>
-					<br>
-					<div class="right border">
-						<div class="" id="edit-data"></div>
-						<br>
-						<div class="col-md-12 col-sm-12 form-group">					
-						</div>                        
-					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 form-group ">
-						<div class="buttons-box w-100 d-flex justify-content-end mt-3">
-							<a class="theme-btn btn-style-one" href="checkout2.html"> 
-								Procced To Cheakout
-							</a>
+		
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="row justify-content-center">
+						<div class="cart-column col-lg-6 col-md-12 col-sm-12 justify-content-center">
+							<div class="inner-column">
+								<div class="cart-outer">
+									<div class="table-outer">
+										<table class="cart-table ">
+											<thead class="cart-header">
+												<tr>
+													<th class="prod-column">product</th>
+													<th>&nbsp;</th>
+													<th>Price</th>
+													<th>Status</th>
+													<th>Total</th>
+												</tr>
+											</thead>
+											
+											<tbody>
+											
+												<tr>
+													<td colspan="2" class="prod-column">
+														<div class="column-box">
+															<figure class="prod-thumb">
+																
+																<a href="#"><img src="images/gallery/1.jpg" alt=""></a>
+															</figure>
+															<h6 class="prod-title">RUMAH BATUBULAN</h6>
+															<div class="prod-text">Rp.2.100.000 <br> Discount 10%</div>
+														</div>
+													</td>
+													
+													<td class="price">Rp.1.800.000</td>
+													<!-- Quantity Box -->
+													<td class="quantity-box">
+														<span class="badge bg-success">Success</span>
+													</td>
+													<td class="sub-total">Rp.1.800.000</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="prod-column">
+														<div class="column-box">
+															<figure class="prod-thumb">
+																
+																<a href="#"><img src="images/gallery/2.jpg" alt=""></a>
+															</figure>
+															<h6 class="prod-title">RUMAH PETAK</h6>
+															<div class="prod-text">Rp.2.100.000 <br> Discount 10%</div>
+														</div>
+													</td>
+													
+													<td class="price">Rp.1.800.000</td>
+													<!-- Quantity Box -->
+													<td class="quantity-box">
+														<span class="badge bg-success">Success</span>
+													</td>
+													<td class="sub-total">Rp.1.800.000</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="prod-column">
+														<div class="column-box">
+															<figure class="prod-thumb">
+																
+																<a href="#"><img src="images/gallery/3.jpg" alt=""></a>
+															</figure>
+															<h6 class="prod-title">RUMAH BANJAR</h6>
+															<div class="prod-text">Rp.2.100.000 <br> Discount 10%</div>
+														</div>
+													</td>
+													
+													<td class="price">Rp.1.800.000</td>
+													<!-- Quantity Box -->
+													<td class="quantity-box">
+														<span class="badge bg-success">Success</span>
+													</td>
+													<td class="sub-total">Rp.1.800.000</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="prod-column">
+														<div class="column-box">
+															<figure class="prod-thumb">
+																
+																<a href="#"><img src="images/gallery/4.jpg" alt=""></a>
+															</figure>
+															<h6 class="prod-title">KOST SAMBANGAN</h6>
+															<div class="prod-text">Rp.2.100.000 <br> Discount 10%</div>
+														</div>
+													</td>
+													
+													<td class="price">Rp.1.800.000</td>
+													<!-- Quantity Box -->
+													<td class="quantity-box">
+														<span class="badge bg-success">Success</span>
+													</td>
+													<td class="sub-total">Rp.1.800.000</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="prod-column">
+														<div class="column-box">
+															<figure class="prod-thumb">
+																
+																<a href="#"><img src="images/gallery/5.jpg" alt=""></a>
+															</figure>
+															<h6 class="prod-title">APARTEMEN</h6>
+															<div class="prod-text">Rp.2.100.000 <br> Discount 10%</div>
+														</div>
+													</td>
+													
+													<td class="price">Rp.1.800.000</td>
+													<!-- Quantity Box -->
+													<td class="quantity-box">
+														<span class="badge bg-success">Success</span>
+													</td>
+													<td class="sub-total">Rp.1.800.000</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+								
+							</div>
 						</div>
+						<!-- Column -->
+						
 					</div>
 				</div>
-				<!-- End Order Summary Column -->
+			</div>
 		
-		</div>
 	</section>
 	
 	
@@ -358,13 +463,13 @@
 <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>
 
 <!-- Your other scripts -->
-<script src="js/carousel-slider.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/magnific-popup.min.js"></script>
 <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 <script src="js/appear.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/parallax.min.js"></script>
 <script src="js/tilt.jquery.min.js"></script>
 <script src="js/jquery.paroller.min.js"></script>
@@ -377,10 +482,34 @@
 <script src="js/nav-tool.js"></script>
 <script src="js/jquery-ui.js"></script>
 <script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 <!-- Place this script in your HTML file -->
+<script>
+	$(document).ready(function () {
+	   $('#update').click(function (e) {
+		   e.preventDefault();
 
+		   // Assuming a successful validation, show success alert
+		   Swal.fire({
+			title: "Do you want to save the changes?",
+			showDenyButton: true,
+			showCancelButton: true,
+			confirmButtonText: "Save",
+			denyButtonText: `Don't save`
+			}).then((result) => {
+			/* Read more about isConfirmed, isDenied below */
+			if (result.isConfirmed) {
+				Swal.fire("Saved!", "", "success");
+			} else if (result.isDenied) {
+				Swal.fire("Changes are not saved", "", "info");
+			}
+			});
+	   });
+   });                                                                                                                                       
+</script>
 <script>
 	// Function to get parameter value from URL
 	function getParameterValue(parameterName) {
