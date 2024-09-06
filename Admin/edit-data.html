@@ -292,30 +292,30 @@
                                         <div class="form-group">
                                             <label class="font-weight-bold" for="title">Title <span class="text-danger">*</span></label>
                                             <div>
-                                                <input type="text" class="form-control" id="title" name="title" placeholder="Title" >
+                                                <input type="text" class="form-control" id="title" name="title" placeholder="Title" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="font-weight-bold" for="price">Price <span class="text-danger">*</span></label>
                                             <div>
-                                                <input type="text" class="form-control" id="price" name="price" placeholder="Price" >
+                                                <input type="text" class="form-control" id="price" name="price" placeholder="Price" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="font-weight-bold" for="discount">Discount <span class="text-danger">*</span></label>
                                             <div>
-                                                <input type="inputtext" max="100" class="form-control" id="discount" name="discount" placeholder="Discount" >
+                                                <input type="inputtext" max="100" class="form-control" id="discount" name="discount" placeholder="Discount" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="font-weight-bold" for="linkDrive">Link Drive <span class="text-danger">*</span></label>
                                             <div>
-                                                <input type="url" class="form-control" id="link" name="linkDrive" placeholder="Link Drive" >
+                                                <input type="url" class="form-control" id="link" name="linkDrive" placeholder="Link Drive" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="font-weight-bold" for="productDetails">Product Details <span class="text-danger">*</span></label>
-                                            <textarea class="form-control" id="productDetail" name="productDetails" rows="5" placeholder="Product Details" ></textarea>
+                                            <textarea class="form-control" id="productDetail" name="productDetails" rows="5" placeholder="Product Details" required></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label class="font-weight-bold" for="additionalInfo">Additional Information</label>
@@ -332,7 +332,7 @@
                                         </div>
                                     </div>
                                 </div>                           
-                            </form>                        
+                            </form>                                        
                         </div>
                     </div>
                     
@@ -821,6 +821,7 @@
     <script>
 
     $(document).ready(function () {
+        
         
     // Mendapatkan nilai parameter dari URL
     function getParameterValue(parameterName) {
