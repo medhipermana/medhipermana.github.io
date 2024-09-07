@@ -7,14 +7,8 @@
           required: true,
           number: true,
         },
-        discount: {
-          required: true,
-          number: true,
-        },
         linkDrive: "required",
         productDetails: "required",
-        additionalInfo: "required",
-        moreDetails: "required",
         fileInput1: "required",
       },
       messages: {

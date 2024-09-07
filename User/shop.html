@@ -43,6 +43,38 @@
 			border-color: #007bff;
 			/* Change this to the active link border color */
 		}
+		#historyList {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 10;
+            display: none; /* Initially hidden */
+        }
+
+        .history-item {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.3s;
+        }
+
+        .history-item:last-child {
+            border-bottom: none;
+        }
+
+        .history-item:hover {
+            background-color: #f0f0f0;
+        }
+		
+
+
 	</style>
 
 	<!-- Responsive -->
@@ -160,6 +192,7 @@
 								<input type="search" name="search-field" value="" placeholder="SEARCH HERE" required>
 								<button type="submit"><span class="icon flaticon-search-1"></span></button>
 							</div>
+
 						</form>
 					</div>
 					<div class="menu-outer">
@@ -404,9 +437,11 @@
 		<div class="color-layer"></div>
 		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
 		<form method="post" action="shop.html"> <!-- Change action to the desired page -->
-			<div class="form-group">
+			<div class="form-group" id="seachInput">
 				<input type="text" name="search-field" value="" placeholder="Search Here" required="">
-				<button type="submit"><i class="fa fa-search"></i></button>
+				<button onclick="saveSearch" type="submit"><i class="fa fa-search"></i></button>
+				<div class=" search-history accordion-body " id="historyList"></div>
+
 			</div>
 		</form>
 	</div>
@@ -567,6 +602,69 @@
 		// Initial load
 		showProducts();
 	
+	</script>
+	<script>
+		// Function to save search query to localStorage
+function saveSearch() {
+    const searchInput = document.getElementById('searchInput').value;
+
+    if (searchInput.trim()) {
+        let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
+        
+        // Add new search to history
+        searchHistory.push(searchInput);
+        
+        // Save updated history back to localStorage
+        localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+
+        // Clear input field
+        document.getElementById('searchInput').value = '';
+
+        // Update the search history display
+        displaySearchHistory();
+    }
+}
+
+// Function to display search history from localStorage
+function displaySearchHistory() {
+    const historyList = document.getElementById('historyList');
+    let searchHistory = JSON.parse(localStorage.getItem('searchHistory')) || [];
+
+    // Clear previous history
+    historyList.innerHTML = '';
+
+    // Display each search item
+    searchHistory.forEach((item) => {
+        let div = document.createElement('div');
+        div.classList.add('history-item' );
+        div.textContent = ${item};
+        div.onclick = () => {
+            // Set clicked history item into the search box
+            document.getElementById('searchInput').value = item;
+            hideSearchHistory(); // Hide history after selection
+        };
+        historyList.appendChild(div);
+    });
+
+    // Show the search history
+    if (searchHistory.length > 0) {
+        historyList.style.display = 'block';
+    }
+}
+
+// Hide search history
+function hideSearchHistory() {
+    setTimeout(() => {
+        const historyList = document.getElementById('historyList');
+        historyList.style.display = 'none';
+    }, 200); // Timeout to allow click on list item
+}
+
+// Show search history when typing in search input
+document.getElementById('searchInput').addEventListener('input', displaySearchHistory);
+
+// Load and display search history when the page loads
+window.onload = displaySearchHistory;
 	</script>
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
