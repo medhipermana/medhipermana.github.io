@@ -13,26 +13,97 @@
     <!-- Disable tap highlight on IE -->
     <meta name="msapplication-tap-highlight" content="no">
     <!-- <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Third-party stylesheets -->
     <link rel="stylesheet" href="./vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./vendors/ionicons-npm/css/ionicons.css">
     <link rel="stylesheet" href="./vendors/linearicons-master/dist/web-font/style2.css">
     <link rel="stylesheet" href="./vendors/pixeden-stroke-7-icon-master/pe-icon-7-stroke/dist/pe-icon-7-stroke.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11">
     <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />
     <link href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+
+    <!-- Custom stylesheets -->
     <link href="./styles/css/base.css" rel="stylesheet">
 
+
     <style>
-        /* Tambahkan aturan CSS jika diperlukan */
-        .image-preview-container {
-            text-align: center; /* Pusatkan gambar preview */
-        }
-        .image-preview {
-            max-width: 100%;
-            max-height: 200px;
-            margin-top: 10px;
-            display: block;
-        }
+
+    .slick-track {
+        position: relative;
+        left: 0;
+        top: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slider-item {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        transition: all .2s;
+        -webkit-transition: all .2s;
+        -moz-transition: all .2s;
+        -ms-transition: all .2s;
+        -o-transition: all .2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .slick-center .slider-item {
+        background: #dee2e6;
+        color: #495057;
+    }
+
+    .box {
+        position: relative;
+        max-width: 80%;
+        max-height: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image {
+        opacity: 1;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        object-position: center center;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        -webkit-transition: .5s ease;
+        -moz-transition: .5s ease;
+        -ms-transition: .5s ease;
+        -o-transition: .5s ease;
+    }
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .slider-item:hover .image {
+        opacity: 0.3;
+    }
+
+    .slider-item:hover .middle {
+        opacity: 1;
+    }
+
     </style>
 </head>
 
@@ -201,98 +272,53 @@
                                     <i class="lnr-file-add icon-gradient bg-night-fade"></i>
                                 </div>
                                 <div>
-                                    Form Validation
-                                    <div class="page-title-subheading">Input Data for Asset Design.</div>
+                                    Edit Profile
+                                    <div class="page-title-subheading">Edit your profile below</div>
                                 </div>
                             </div>                        
                         </div>
                     </div>
                     <div class="main-card mb-3 card">
                         <div class="card-body">
-                            <h5 class="card-title">INPUT DATA ASSET</h5>
-                            <form id="assetForm" class="col-md-12 mx-auto" action="./manager-data.html">
-                             
+                            <h5 class="card-title">Edit data profile</h5>
+                            <form id="" class="col-md-12 mx-auto" action="./manager-data.html">                   
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label for="fileInput1" class="font-weight-bold">Upload Image (max 5 file) <span class="text-danger">*</span></label>
-                                            <input type="file" id="fileInput1" multiple  accept="image/jpg, image/jpeg, image/png"
+                                            <label for="fileInput1" class="font-weight-bold">Upload Image <span class="text-danger"></span></label>
+                                            
+                                            <input type="file" id="fileInput1" accept="image/jpg, image/jpeg, image/png"
                                             data-max-file-size="3MB"
-                                            data-max-files="5" />
+                                            data-max-files="1"/>                                         
+                                        </div>
+                                        <div class="slick-slider-responsive" id="edit-data">                                                                                     
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label class="font-weight-bold" for="title">Title <span class="text-danger">*</span></label>
+                                            <label class="font-weight-bold" for="title">Email </label>
                                             <div>
-                                                <input type="text" class="form-control" id="title" name="title" placeholder="Title" >
+                                                <input type="text" class="form-control" id="title" name="title" placeholder="adminsatu@gmail.com" >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="font-weight-bold" for="price">Price <span class="text-danger">*</span></label>
+                                            <label class="font-weight-bold" for="price">Name </label>
                                             <div>
-                                                <input type="text" class="form-control" id="price" name="price" placeholder="Price" >
+                                                <input type="text" class="form-control" id="price" name="price" placeholder="Admin Satu" >
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="font-weight-bold" for="discount">Discount <span class="text-danger">*</span></label>
+                                            <label class="font-weight-bold" for="discount">Phone Number </label>
                                             <div>
-                                                <input type="number" max="100" class="form-control" id="discount" name="discount" placeholder="Discount" >
+                                                <input type="number" max="100" class="form-control" id="discount" name="discount" placeholder="08123154122" >
                                             </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="font-weight-bold" for="linkDrive">Link Drive <span class="text-danger">*</span></label>
-                                            <div>
-                                                <input type="url" class="form-control" id="linkDrive" name="linkDrive" placeholder="Link Drive" >
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="font-weight-bold" for="productDetails">Product Details <span class="text-danger">*</span></label>
-                                            <textarea class="form-control" id="productDetails" name="productDetails" rows="3" placeholder="Product Details" ></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="font-weight-bold" for="additionalInfo">Additional Information</label>
-                                            <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="3" placeholder="Additional Information" ></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="font-weight-bold" for="moreDetails">More Details</label>
-                                            <div>
-                                                <textarea type="text" class="form-control" id="moreDetails" name="moreDetails" placeholder="More Details" ></textarea> 
-                                            </div>
-                                        </div>                                   
-                                    </div>
-                                </div>
-                               
-                            </form>       
-                            <form id="assetForm" class="col-md-12 mx-auto" action="./manager-data.html">
-                             
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <!-- <label for="fileInput1" class="font-weight-bold">Upload Image (max 5 file) <span class="text-danger">*</span></label>
-                                            <input type="file" id="fileInput1" multiple  accept="image/jpg, image/jpeg, image/png"
-                                            data-max-file-size="3MB"
-                                            data-max-files="5" /> -->
+                                        </div>                                      
+                                        <div class="form-group mt-3 d-flex justify-content-end" id="update">
+                                            <button type="submit" class="btn btn-primary ">Update</button>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">                                  
-                                        <div class="form-group">
-                                            <label class="font-weight-bold" for="additionalInfo">Additional Information</label>
-                                            <textarea class="form-control" id="additionalInfo" name="additionalInfo" rows="3" placeholder="Additional Information" ></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="font-weight-bold" for="moreDetails">More Details</label>
-                                            <div>
-                                                <textarea type="text" class="form-control" id="moreDetails" name="moreDetails" placeholder="More Details" ></textarea> 
-                                            </div>
-                                        </div>
-                                        <div class="form-group mt-3 d-flex justify-content-end">
-                                            <button type="submit" class="btn btn-primary " name="signup" value="Sign up">Input</button>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </form>                       
+                                </div>                           
+                            </form>                                        
                         </div>
                     </div>
                     
@@ -748,21 +774,22 @@
     </div>
     <div class="app-drawer-overlay d-none animated fadeIn"></div>
     <!-- plugin dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script type="text/javascript" src="./vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="./vendors/moment/moment.js"></script>
-    <script type="text/javascript" src="./vendors/metismenu/dist/metisMenu.js"></script>
-    <script type="text/javascript" src="./vendors/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
-    <script type="text/javascript" src="./vendors/jquery-circle-progress/dist/circle-progress.min.js"></script>
-    <script type="text/javascript" src="./vendors/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
-    <script type="text/javascript" src="./vendors/toastr/build/toastr.min.js"></script>
-    <script type="text/javascript" src="./vendors/jquery.fancytree/dist/jquery.fancytree-all-deps.min.js"></script>
-    <script type="text/javascript" src="./vendors/apexcharts/dist/apexcharts.min.js"></script>
-    <script type="text/javascript" src="./vendors/jquery-validation/dist/jquery.validate.min.js"></script>
+   <!-- Third-party scripts -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+   <script type="text/javascript" src="./vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script type="text/javascript" src="./vendors/moment/moment.js"></script>
+   <script type="text/javascript" src="./vendors/metismenu/dist/metisMenu.js"></script>
+   <script type="text/javascript" src="./vendors/bootstrap4-toggle/js/bootstrap4-toggle.min.js"></script>
+   <script type="text/javascript" src="./vendors/jquery-circle-progress/dist/circle-progress.min.js"></script>
+   <script type="text/javascript" src="./vendors/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+   <script type="text/javascript" src="./vendors/toastr/build/toastr.min.js"></script>
+   <script type="text/javascript" src="./vendors/jquery.fancytree/dist/jquery.fancytree-all-deps.min.js"></script>
+   <script type="text/javascript" src="./vendors/apexcharts/dist/apexcharts.min.js"></script>
+   <script type="text/javascript" src="./vendors/jquery-validation/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-  
-    <!-- custome.js -->
+    <script type="text/javascript" src="./vendors/slick-carousel/slick/slick.min.js"></script>
+    
+    <!-- Custom scripts -->
     <script type="text/javascript" src="./js/charts/apex-charts.js"></script>
     <script type="text/javascript" src="./js/circle-progress.js"></script>
     <script type="text/javascript" src="./js/demo.js"></script>
@@ -773,20 +800,42 @@
     <script type="text/javascript" src="./js/form-components/form-validation.js"></script>
     <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
     <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.js"></script>
-    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>      
+    <script src="https://unpkg.com/filepond@^4/dist/filepond.js"></script>    
+    <script src="js/carousel-slider.js"></script>
     <script type="text/javascript" src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
     <script>
-                      // Get a reference to the file input element
-    const inputElement = document.querySelector('input[type="file"]');
 
-    FilePond.registerPlugin(FilePondPluginImagePreview, FilePondPluginImageTransform);
-    // Create a FilePond instance
-    const pond = FilePond.create(inputElement);
-    pond.setOptions({
-    // imagePreviewMaxHeight: 50,
-    imageResizeTargetWidth: 600,
-    imageCropAspectRatio: 1,
-    imageTransformVariants: {
+    $(document).ready(function () {
+        
+        
+    // Mendapatkan nilai parameter dari URL
+    function getParameterValue(parameterName) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(parameterName);
+        }
+
+        // Mengambil nilai parameter "id" dari URL
+        var namaValue = Number(getParameterValue('id'));
+        console.log(namaValue);
+
+        // Mengambil data JSON eksternal
+        $.ajax({
+            url: '../data_produk.json',
+            dataType: 'json',
+            success: function (data) {
+                // Mendapatkan elemen container
+                var produkContainer = $('#edit-data');
+                // Create a FilePond instance
+                FilePond.registerPlugin(FilePondPluginImagePreview, FilePondPluginImageTransform);
+        const pond = FilePond.create($('input[type="file"]')[0]);
+        pond.setOptions({
+            imageResizeTargetWidth: 600,
+            imageCropAspectRatio: 1,
+            imageTransformVariants: {
         thumb_medium_: (transforms) => {
             transforms.resize = {
                 size: {
@@ -805,26 +854,106 @@
             };
             return transforms;
         },
-    },
-})
-    </script>
-  
-    <script>
-        function previewImage(input, previewId) {
-            var fileInput = input;
-            var imagePreview = document.getElementById(previewId);
-    
-            if (fileInput.files && fileInput.files[0]) {
-                var reader = new FileReader();
-    
-                reader.onload = function (e) {
-                    imagePreview.src = e.target.result;
-                };
-    
-                reader.readAsDataURL(fileInput.files[0]);
+            },
+        });
+        let title=$('#title').val('');
+        let price=$('#price').val('');
+        let discount=$('#discount').val('');
+        let link=$('#link').val('');
+        let productDetail=$('#productDetail').val('');
+        let additionalInformation=$('#additionalInformation').val('');
+        let more=$('#more').val('');
+
+
+                // Menampilkan data JSON dalam HTML dengan data id yang telah dipilih
+                $.each(data, function (index, produk) {
+                    if (produk.id === namaValue) {
+                        var produkHTML = `                          
+                                        <div>
+                                            <div class="slider-item">
+                                                <div class="box">
+                                                    <img src="${produk.image[0]}" alt="" class="image">
+                                                </div>
+                                                <div class="middle">
+                                                    <button type="button" class="btn btn-danger delete-confirm-btn hapus-btn">Hapus</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="slider-item">
+                                                <div class="box">
+                                                    <img src="${produk.image[1]}" alt="" class="image">
+                                                </div>
+                                                <div class="middle">
+                                                    <button type="button" class="btn btn-danger delete-confirm-btn hapus-btn">Hapus</button>
+                                                </div>
+                                            </div>
+                                        </div>                         
+                        `;
+                        produkContainer.append(produkHTML);
+                        title.val(produk.title);
+                        price.val(produk.price);
+                        discount.val(produk.discount);
+                        link.val(produk.link);
+                        productDetail.val(produk.product_detail);
+                        additionalInformation.val(produk.additional_information);
+                        more.val(produk.more_detail);
+                    }
+                });
+                $('.hapus-btn').click(function (e) {
+                e.preventDefault();
+                console.log("Success!")
+                Swal.fire({
+                    title: "Are you sure?",
+                    text: "You won't be able to revert this!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, delete it!"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            title: "Deleted!",
+                            text: "Your file has been deleted.",
+                            icon: "success"
+                        });
+                    }
+                });
+        });
+            },
+            error: function (error) {
+                console.error('Error fetching data:', error);
             }
-        }
+        });
+                          // Get a reference to the file input element 
+    });
+    
     </script>
+   <script>
+	$(document).ready(function () {
+	   $('#update').click(function (e) {
+		   e.preventDefault();
+
+		   // Assuming a successful validation, show success alert
+		   Swal.fire({
+			title: "Do you want to save the changes?",
+			showDenyButton: true,
+			showCancelButton: true,
+			confirmButtonText: "Save",
+			denyButtonText: `Don't save`
+			}).then((result) => {
+			/* Read more about isConfirmed, isDenied below */
+			if (result.isConfirmed) {
+				Swal.fire("Saved!", "", "success");
+			} else if (result.isDenied) {
+				Swal.fire("Changes are not saved", "", "info");
+			}
+			});
+	   });
+   });                                                                                                                                       
+</script>
+  
 </body>
 
 </html>

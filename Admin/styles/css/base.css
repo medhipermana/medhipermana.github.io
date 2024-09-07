@@ -17432,8 +17432,8 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-end, body.swal2-no-backdrop .sw
   border: 0;
   border-radius: 0.25em;
   background: initial;
-  background-color: #f8f9fa;
-  color: #fff;
+  background-color: #4f5459;
+  color: #fbfbfb;
   font-size: 1.0625em; }
 
 .swal2-popup .swal2-styled:focus {
