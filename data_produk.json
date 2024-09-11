@@ -1,93 +1,93 @@
 [
-    {
-      "id": 1,
-      "title": "RUMAH BATUBULAN GIANYAR",
-      "price": 2000000,
-      "discount": 34,
-      "image": [
-          "../asset-gambar/gallery/2.jpg",
-          "../asset-gambar/gallery/5.jpg",
-          "../asset-gambar/gallery/1.jpg",
-          "../asset-gambar/gallery/6.jpg",
-          "../asset-gambar/gallery/3.jpg",
-          "../asset-gambar/gallery/4.jpg"
-      ],
-      "link": "https://drive.google.com/file/d/1rSTcAGr5eBf0EXbYOLSaB_iBQ5vVy3vX/view?usp=drive_link",
-      "product_detail": "Private Villa ini dibuat dua lantai dengan konsep modern classic dengan bangunan terpusat di tengah dan dikeliling oleh kolam renang serta taman dan kebun. Warna putih yang dominan membuat bangunan ini terletak minimalis. Namun, detail batu, kayu, serta ukir-ukiran ditambahkan sebagai detail membuat villa ini terlihat lebih tegas serta mewah. Ruangan yang lenggang dan luas membuatnya cocok dijadikan sebagai tempat berkumpul dan bersantai keluarga.",
-      "additional_information": "Modern minimalis, rumah ini menggunakan fasad tanpa banyak ornamen, dan mempertegas atap dengan menggunakan atap bidang. Hasilnya adalah rumah minimalis yang penuh karakter; material alami yang indah dipadukan dengan elemen sederhana, suasananya menciptakan suasana santai baik untuk keluarga maupun tamu.",
-      "more_detail": "Proyek: Rumah Batubulan, Gianyar Type: Rumah Tinggal. Lokasi: Batu Bulan"
+  {
+    "id": 1,
+    "title": "RUMAH BATUBULAN GIANYAR",
+    "price": 2000000,
+    "discount": 34,
+    "image": [
+      "../asset-gambar/gallery/a/1.jpg",
+      "../asset-gambar/gallery/a/2.jpg",
+      "../asset-gambar/gallery/a/3.jpg",
+      "../asset-gambar/gallery/a/4.jpg",
+      "../asset-gambar/gallery/a/5.jpg",
+      "../asset-gambar/gallery/a/6.jpg"
+    ],
+    "link": "https://drive.google.com/file/d/1rSTcAGr5eBf0EXbYOLSaB_iBQ5vVy3vX/view?usp=drive_link",
+    "product_detail": "Private Villa ini dibuat dua lantai dengan konsep modern classic dengan bangunan terpusat di tengah dan dikeliling oleh kolam renang serta taman dan kebun. Warna putih yang dominan membuat bangunan ini terletak minimalis. Namun, detail batu, kayu, serta ukir-ukiran ditambahkan sebagai detail membuat villa ini terlihat lebih tegas serta mewah. Ruangan yang lenggang dan luas membuatnya cocok dijadikan sebagai tempat berkumpul dan bersantai keluarga.",
+    "additional_information": "Modern minimalis, rumah ini menggunakan fasad tanpa banyak ornamen, dan mempertegas atap dengan menggunakan atap bidang. Hasilnya adalah rumah minimalis yang penuh karakter; material alami yang indah dipadukan dengan elemen sederhana, suasananya menciptakan suasana santai baik untuk keluarga maupun tamu.",
+    "more_detail": "Proyek: Rumah Batubulan, Gianyar Type: Rumah Tinggal. Lokasi: Batu Bulan"
   },
   {
-      "id": 2,
-      "title": "RUMAH RAJA SAKTI SINGARAJA",
-      "price": 2000000,
-      "discount": 34,
-      "image": [
-          "../asset-gambar/gallery/6.jpg",
-          "../asset-gambar/gallery/2.jpg",
-          "../asset-gambar/gallery/3.jpg",
-          "../asset-gambar/gallery/1.jpg",
-          "../asset-gambar/gallery/5.jpg",
-          "../asset-gambar/gallery/4.jpg"
-      ],
-      "link": "https://drive.google.com/file/d/1rSTcAGr5eBf0EXbYOLSaB_iBQ5vVy3vX/view?usp=drive_link",
-      "product_detail": "Private Villa ini dibuat dua lantai dengan konsep modern classic dengan bangunan terpusat di tengah dan dikeliling oleh kolam renang serta taman dan kebun. Warna putih yang dominan membuat bangunan ini terletak minimalis. Namun, detail batu, kayu, serta ukir-ukiran ditambahkan sebagai detail membuat villa ini terlihat lebih tegas serta mewah. Ruangan yang lenggang dan luas membuatnya cocok dijadikan sebagai tempat berkumpul dan bersantai keluarga.",
-      "additional_information": "Modern minimalis, rumah ini menggunakan fasad tanpa banyak ornamen, dan mempertegas atap dengan menggunakan atap bidang. Hasilnya adalah rumah minimalis yang penuh karakter; material alami yang indah dipadukan dengan elemen sederhana, suasananya menciptakan suasana santai baik untuk keluarga maupun tamu.",
-      "more_detail": "Proyek: Rumah Batubulan, Gianyar Type: Rumah Tinggal. Lokasi: Batu Bulan"
+    "id": 2,
+    "title": "RUMAH RAJA SAKTI SINGARAJA",
+    "price": 2200000,
+    "discount": 32,
+    "image": [
+      "../asset-gambar/gallery/b/1.jpg",
+      "../asset-gambar/gallery/b/2.jpg",
+      "../asset-gambar/gallery/b/3.jpg",
+      "../asset-gambar/gallery/b/4.jpg",
+      "../asset-gambar/gallery/b/5.jpg",
+      "../asset-gambar/gallery/b/6.jpg"
+    ],
+    "link": "https://drive.google.com/file/d/1rSTcAGr5eBf0EXbYOLSaB_iBQ5vVy3vX/view?usp=drive_link",
+    "product_detail": "Private Villa ini dibuat dua lantai dengan konsep modern classic dengan bangunan terpusat di tengah dan dikeliling oleh kolam renang serta taman dan kebun. Warna putih yang dominan membuat bangunan ini terletak minimalis. Namun, detail batu, kayu, serta ukir-ukiran ditambahkan sebagai detail membuat villa ini terlihat lebih tegas serta mewah. Ruangan yang lenggang dan luas membuatnya cocok dijadikan sebagai tempat berkumpul dan bersantai keluarga.",
+    "additional_information": "Modern minimalis, rumah ini menggunakan fasad tanpa banyak ornamen, dan mempertegas atap dengan menggunakan atap bidang. Hasilnya adalah rumah minimalis yang penuh karakter; material alami yang indah dipadukan dengan elemen sederhana, suasananya menciptakan suasana santai baik untuk keluarga maupun tamu.",
+    "more_detail": "Proyek: Rumah Raja Sakti, Singaraja Type: Rumah Tinggal. Lokasi: Singaraja"
   },
   {
-      "id": 3,
-      "title": "LUXURIOUS SKYLINE APARTMENT",
-      "price": 2500000,
-      "discount": 25,
-      "image": [
-        "../asset-gambar/gallery/4.jpg",
-        "../asset-gambar/gallery/2.jpg",
-        "../asset-gambar/gallery/6.jpg",
-        "../asset-gambar/gallery/1.jpg",
-        "../asset-gambar/gallery/5.jpg",
-        "../asset-gambar/gallery/3.jpg"
-      ],
-      "link": "https://drive.google.com/file/d/1lmn789opqrs/view?usp=drive_link",
-      "product_detail": "Luxurious apartment with a spectacular city skyline view. Complete facilities, including a fitness center and rooftop swimming pool. Modern and stylish interior design.",
-      "additional_information": "Contemporary architectural facade. Strategically located in the city center, close to shopping centers and public transportation.",
-      "more_detail": "Project: Luxury Heights Apartment, Jakarta Type: Luxury Apartment. Location: Jakarta Central, DKI Jakarta"
+    "id": 3,
+    "title": "LUXURIOUS SKYLINE APARTMENT",
+    "price": 2500000,
+    "discount": 25,
+    "image": [
+      "../asset-gambar/gallery/c/1.jpg",
+      "../asset-gambar/gallery/c/2.jpg",
+      "../asset-gambar/gallery/c/3.jpg",
+      "../asset-gambar/gallery/c/4.jpg",
+      "../asset-gambar/gallery/c/5.jpg",
+      "../asset-gambar/gallery/c/6.jpg"
+    ],
+    "link": "https://drive.google.com/file/d/1lmn789opqrs/view?usp=drive_link",
+    "product_detail": "Luxurious apartment with a spectacular city skyline view. Complete facilities, including a fitness center and rooftop swimming pool. Modern and stylish interior design.",
+    "additional_information": "Contemporary architectural facade. Strategically located in the city center, close to shopping centers and public transportation.",
+    "more_detail": "Project: Luxury Heights Apartment, Jakarta Type: Luxury Apartment. Location: Jakarta Central, DKI Jakarta"
   },
   {
-      "id": 4,
-      "title": "NATURAL HAVEN HOUSE",
-      "price": 1900000,
-      "discount": 18,
-      "image": [
-        "../asset-gambar/gallery/3.jpg",
-        "../asset-gambar/gallery/4.jpg",
-        "../asset-gambar/gallery/1.jpg",
-        "../asset-gambar/gallery/6.jpg",
-        "../asset-gambar/gallery/5.jpg",
-        "../asset-gambar/gallery/2.jpg"
-      ],
-      "link": "https://drive.google.com/file/d/1xyz123abc456/view?usp=drive_link",
-      "product_detail": "Traditional-style house surrounded by greenery. Combination of wood and natural stone for an authentic feel. Spacious and comfortable living room.",
-      "additional_information": "Traditional architecture with a touch of modernity. Beautifully designed garden creating a peaceful environment.",
-      "more_detail": "Project: Natural Haven House, Yogyakarta Type: Traditional House. Location: Yogyakarta, DI Yogyakarta"
+    "id": 4,
+    "title": "NATURAL HAVEN HOUSE",
+    "price": 1900000,
+    "discount": 18,
+    "image": [
+      "../asset-gambar/gallery/d/1.jpg",
+      "../asset-gambar/gallery/d/2.jpg",
+      "../asset-gambar/gallery/d/3.jpg",
+      "../asset-gambar/gallery/d/4.jpg",
+      "../asset-gambar/gallery/d/5.jpg",
+      "../asset-gambar/gallery/d/6.jpg"
+    ],
+    "link": "https://drive.google.com/file/d/1xyz123abc456/view?usp=drive_link",
+    "product_detail": "Traditional-style house surrounded by greenery. Combination of wood and natural stone for an authentic feel. Spacious and comfortable living room.",
+    "additional_information": "Traditional architecture with a touch of modernity. Beautifully designed garden creating a peaceful environment.",
+    "more_detail": "Project: Natural Haven House, Yogyakarta Type: Traditional House. Location: Yogyakarta, DI Yogyakarta"
   },
   {
-      "id": 5,
-      "title": "CITYSCAPE VISTA APARTMENT",
-      "price": 2200000,
-      "discount": 22,
-      "image": [
-        "../asset-gambar/gallery/5.jpg",
-        "../asset-gambar/gallery/6.jpg",
-        "../asset-gambar/gallery/3.jpg",
-        "../asset-gambar/gallery/1.jpg",
-        "../asset-gambar/gallery/4.jpg",
-        "../asset-gambar/gallery/2.jpg"
-      ],
-      "link": "https://drive.google.com/file/d/1opqrs456lmn/view?usp=drive_link",
-      "product_detail": "Modern apartment with stunning cityscape views. Stylish and functional interior design. Complete facilities for resident comfort.",
-      "additional_information": "Building facade with a combination of glass and metal. Strategically located in the business and entertainment center of the city.",
-      "more_detail": "Project: Cityscape Vista Apartment, Surabaya Type: Modern Apartment. Location: Surabaya, East Java"
+    "id": 5,
+    "title": "CITYSCAPE VISTA APARTMENT",
+    "price": 2200000,
+    "discount": 22,
+    "image": [
+      "../asset-gambar/gallery/e/1.jpg",
+      "../asset-gambar/gallery/e/2.jpg",
+      "../asset-gambar/gallery/e/3.jpg",
+      "../asset-gambar/gallery/e/4.jpg",
+      "../asset-gambar/gallery/e/5.jpg",
+      "../asset-gambar/gallery/e/6.jpg"
+    ],
+    "link": "https://drive.google.com/file/d/1opqrs456lmn/view?usp=drive_link",
+    "product_detail": "Modern apartment with stunning cityscape views. Stylish and functional interior design. Complete facilities for resident comfort.",
+    "additional_information": "Building facade with a combination of glass and metal. Strategically located in the business and entertainment center of the city.",
+    "more_detail": "Project: Cityscape Vista Apartment, Surabaya Type: Modern Apartment. Location: Surabaya, East Java"
   },
   {
     "id": 6,
@@ -95,12 +95,12 @@
     "price": 2800000,
     "discount": 30,
     "image": [
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/1.jpg",
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/5.jpg"
+      "../asset-gambar/gallery/f/1.jpg",
+      "../asset-gambar/gallery/f/2.jpg",
+      "../asset-gambar/gallery/f/3.jpg",
+      "../asset-gambar/gallery/f/4.jpg",
+      "../asset-gambar/gallery/f/5.jpg",
+      "../asset-gambar/gallery/f/6.jpg"
     ],
     "link": "https://drive.google.com/file/d/1def456uvw789/view?usp=drive_link",
     "product_detail": "Exclusive villa with a retreat concept. Surrounded by tropical gardens and a private swimming pool. Interior design prioritizing comfort and tranquility.",
@@ -113,12 +113,12 @@
     "price": 1600000,
     "discount": 12,
     "image": [
-      "../asset-gambar/gallery/1.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/5.jpg",
-      "../asset-gambar/gallery/4.jpg"
+      "../asset-gambar/gallery/g/1.jpg",
+      "../asset-gambar/gallery/g/2.jpg",
+      "../asset-gambar/gallery/g/3.jpg",
+      "../asset-gambar/gallery/g/4.jpg",
+      "../asset-gambar/gallery/g/5.jpg",
+      "../asset-gambar/gallery/g/6.jpg"
     ],
     "link": "https://drive.google.com/file/d/1uvw789opqrs/view?usp=drive_link",
     "product_detail": "Modern city house with terrace gardens.",
@@ -131,197 +131,215 @@
     "price": 2600000,
     "discount": 28,
     "image": [
-      "../asset-gambar/gallery/5.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/1.jpg",
-      "../asset-gambar/gallery/4.jpg"
+      "../asset-gambar/gallery/h/1.jpg",
+      "../asset-gambar/gallery/h/2.jpg",
+      "../asset-gambar/gallery/h/3.jpg",
+      "../asset-gambar/gallery/h/4.jpg",
+      "../asset-gambar/gallery/h/5.jpg",
+      "../asset-gambar/gallery/h/6.jpg"
     ],
     "link": "https://drive.google.com/file/d/1abc123def456/view?usp=drive_link",
-    "product_detail": "Luxurious residence with a seaside location. Modern and spacious interior design. Private beach access and panoramic ocean views.",
-    "additional_information": "Contemporary architectural design with large windows for natural light. Exclusive location for those seeking a seaside lifestyle.",
-    "more_detail": "Project: Seaside Luxury Residence, Bali Type: Luxury Residence. Location: Bali, Indonesia"
+    "product_detail": "Luxury residence by the sea. Equipped with high-end facilities, including private beach access. Interior design blends luxury and comfort.",
+    "additional_information": "Coastal architectural design that emphasizes natural light and air circulation. Strategically located near popular tourist attractions.",
+    "more_detail": "Project: Seaside Luxury Residence, Bali Type: Beachfront Villa. Location: Bali, Indonesia"
   },
   {
     "id": 9,
-    "title": "MODERN HILLSIDE RETREAT",
-    "price": 2000000,
-    "discount": 20,
+    "title": "HILLSIDE VILLA",
+    "price": 2400000,
+    "discount": 24,
     "image": [
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/5.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/1.jpg"
+      "../asset-gambar/gallery/i/1.jpg",
+      "../asset-gambar/gallery/i/2.jpg",
+      "../asset-gambar/gallery/i/3.jpg",
+      "../asset-gambar/gallery/i/4.jpg",
+      "../asset-gambar/gallery/i/5.jpg",
+      "../asset-gambar/gallery/i/6.jpg"
     ],
-    "link": "https://drive.google.com/file/d/1xyz456uvw789/view?usp=drive_link",
-    "product_detail": "Modern retreat on a hillside with panoramic views. Open-concept living spaces and a private infinity pool. Stylish and comfortable interior design.",
-    "additional_information": "Sleek and modern facade with a focus on clean lines. Located in a tranquil hillside setting, perfect for relaxation and enjoying nature.",
-    "more_detail": "Project: Modern Hillside Retreat, Malang Type: Modern Retreat. Location: Malang, East Java"
-  },
-  {
-    "id": 10,
-    "title": "URBAN LIFESTYLE LOFT",
-    "price": 1700000,
-    "discount": 15,
-    "image": [
-      "../asset-gambar/gallery/1.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/5.jpg"
-    ],
-    "link": "https://drive.google.com/file/d/1lmn789opqrs/view?usp=drive_link",
-    "product_detail": "Loft-style living in the heart of the city. Industrial-chic interior design with exposed brick and steel elements. Convenient access to urban amenities.",
-    "additional_information": "Urban facade with a mix of industrial and modern elements. Ideal for those who appreciate a trendy and convenient lifestyle.",
-    "more_detail": "Project: Urban Lifestyle Loft, Medan Type: Loft Residence. Location: Medan, North Sumatra"
-  },
-  {
-    "id": 11,
-    "title": "TRANQUIL RIVERSIDE COTTAGE",
-    "price": 1500000,
-    "discount": 10,
-    "image": [
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/1.jpg",
-      "../asset-gambar/gallery/5.jpg"
-    ],
-    "link": "https://drive.google.com/file/d/1opqrs456lmn/view?usp=drive_link",
-    "product_detail": "Charming riverside cottage with a tranquil atmosphere. Cozy interior design with a fireplace and panoramic views of the river. Perfect for a peaceful getaway.",
-    "additional_information": "Rustic facade with natural materials. Located by the riverside, providing a serene and picturesque setting.",
-    "more_detail": "Project: Riverside Cottage, Bandung Type: Cottage. Location: Bandung, West Java"
-  },
-  {
-    "id": 12,
-    "title": "MODERN URBAN PENTHOUSE",
-    "price": 3000000,
-    "discount": 32,
-    "image": [
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/1.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/5.jpg",
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/3.jpg"
-    ],
-    "link": "https://drive.google.com/file/d/1def456uvw789/view?usp=drive_link",
-    "product_detail": "Luxurious penthouse in the heart of the city. Floor-to-ceiling windows with panoramic urban views. Modern and elegant interior design.",
-    "additional_information": "Sleek and contemporary facade. Exclusive location for those seeking the epitome of urban luxury living.",
-    "more_detail": "Project: Urban Penthouse, Jakarta Type: Luxury Penthouse. Location: Jakarta Central, DKI Jakarta"
-  },
-  {
-    "id": 13,
-    "title": "COASTAL RETREAT BUNGALOW",
-    "price": 1700000,
-    "discount": 15,
-    "image": [
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/5.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/1.jpg"
-    ],
-    "link": "https://drive.google.com/file/d/1xyz123abc456/view?usp=drive_link",
-    "product_detail": "Bungalow retreat with a coastal vibe. Open layout and private beach access. Tropical landscaping for a relaxing seaside experience.",
-    "additional_information": "Casual and inviting facade. Nestled in a coastal area, offering a perfect blend of comfort and beachside living.",
-    "more_detail": "Project: Coastal Retreat Bungalow, Bali Type: Seaside Bungalow. Location: Bali, Indonesia"
-  },
-  {
-    "id": 14,
-    "title": "MODERN HILLTOP VILLA",
-    "price": 2600000,
-    "discount": 28,
-    "image": [
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/5.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/1.jpg",
-      "../asset-gambar/gallery/2.jpg"
-    ],
-    "link": "https://drive.google.com/file/d/1uvw789opqrs/view?usp=drive_link",
-    "product_detail": "Contemporary villa perched on a hilltop. Sweeping views and luxurious amenities. Clean and sophisticated interior design.",
-    "additional_information": "Modern and minimalist facade. Elevated location for those who appreciate breathtaking hilltop living.",
-    "more_detail": "Project: Hilltop Vista Villa, Malang Type: Modern Villa. Location: Malang, East Java"
-  },
-  {
-    "id": 15,
-    "title": "RUSTIC MOUNTAIN CABIN",
-    "price": 1400000,
-    "discount": 8,
-    "image": [
-      "../asset-gambar/gallery/5.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/1.jpg"
-    ],
-    "link": "https://drive.google.com/file/d/1abc123def456/view?usp=drive_link",
-    "product_detail": "Cozy cabin nestled in the mountains. Wooden interior with a fireplace. Ideal for a rustic and peaceful mountain retreat.",
-    "additional_information": "Rustic facade with log cabin charm. Surrounded by nature, providing a serene escape in the mountains.",
-    "more_detail": "Project: Mountain Cabin Retreat, Bandung Type: Mountain Cabin. Location: Bandung, West Java"
-  },
-  {
-    "id": 16,
-    "title": "CITY OASIS APARTMENT",
-    "price": 2300000,
-    "discount": 23,
-    "image": [
-      "../asset-gambar/gallery/1.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/5.jpg"
-    ],
-    "link": "https://drive.google.com/file/d/1lmn789opqrs/view?usp=drive_link",
-    "product_detail": "Urban oasis apartment with lush greenery. Balcony views and modern amenities. Serene living in the heart of the city.",
-    "additional_information": "Green facade with vertical gardens. Central location for convenient access to city life.",
-    "more_detail": "Project: City Oasis Apartment, Surabaya Type: Urban Apartment. Location: Surabaya, East Java"
-  },
-  {
-    "id": 17,
-    "title": "MODERN DESERT RETREAT",
-    "price": 1800000,
-    "discount": 18,
-    "image": [
-      "../asset-gambar/gallery/5.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/1.jpg"
-    ],
-    "link": "https://drive.google.com/file/d/1opqrs456lmn/view?usp=drive_link",
-    "product_detail": "Sleek desert retreat with panoramic views. Minimalist design and private pool. Tranquil living in the midst of the desert landscape.",
-    "additional_information": "Contemporary facade blending with the desert surroundings. A perfect escape for those seeking solitude in the desert.",
-    "more_detail": "Project: Desert Vista Retreat, Yogyakarta Type: Modern Retreat. Location: Yogyakarta, DI Yogyakarta"
-  },
-  {
-    "id": 18,
-    "title": "LAKESIDE CABIN ESCAPE",
-    "price": 2000000,
-    "discount": 20,
-    "image": [
-      "../asset-gambar/gallery/3.jpg",
-      "../asset-gambar/gallery/2.jpg",
-      "../asset-gambar/gallery/1.jpg",
-      "../asset-gambar/gallery/4.jpg",
-      "../asset-gambar/gallery/6.jpg",
-      "../asset-gambar/gallery/5.jpg"
-    ],
-    "link": "https://drive.google.com/file/d/1def456uvw789/view?usp=drive_link",
-    "product_detail": "Charming cabin by the lakeside. Scenic views and rustic interior. Perfect for a serene lakeside escape.",
-    "additional_information": "Traditional facade with lakeside charm. Surrounded by nature, offering tranquility by the lake.",
-    "more_detail": "Project: Lakeside Cabin Escape, Malang Type: Lakeside Cabin. Location: Malang, East Java"
-  }
-    
-]
+    "link": "https://drive.google.com/file/d/1hij123klm456/view?usp=drive_link",
+    "product_detail": "Private villa located in the hills, offering panoramic views of nature.",
+    "additional_information": "Mountain-style architecture, combining wood and stone materials. Designed for maximum privacy and relaxation.",
+    "more_detail": "Project: Hillside Villa, Ubud Type: Private Villa. Location: Ubud, Bali"
+    },
+    {
+      "id": 10,
+      "title": "MODERN RIVERSIDE RESIDENCE",
+      "price": 2300000,
+      "discount": 26,
+      "image": [
+        "../asset-gambar/gallery/j/1.jpg",
+        "../asset-gambar/gallery/j/2.jpg",
+        "../asset-gambar/gallery/j/3.jpg",
+        "../asset-gambar/gallery/j/4.jpg",
+        "../asset-gambar/gallery/j/5.jpg",
+        "../asset-gambar/gallery/j/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1nopq123rst456/view?usp=drive_link",
+      "product_detail": "Contemporary riverside residence offering beautiful water views. Modern amenities and spacious living areas.",
+      "additional_information": "Modern architectural design with open-plan living spaces. Located close to natural attractions and city amenities.",
+      "more_detail": "Project: Riverside Residence, Bogor Type: Modern House. Location: Bogor, West Java"
+    },
+    {
+      "id": 11,
+      "title": "URBAN OASIS HOUSE",
+      "price": 1500000,
+      "discount": 20,
+      "image": [
+        "../asset-gambar/gallery/k/1.jpg",
+        "../asset-gambar/gallery/k/2.jpg",
+        "../asset-gambar/gallery/k/3.jpg",
+        "../asset-gambar/gallery/k/4.jpg",
+        "../asset-gambar/gallery/k/5.jpg",
+        "../asset-gambar/gallery/k/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1rst123uvw456/view?usp=drive_link",
+      "product_detail": "City house with a private garden and modern minimalist design. Perfect for families looking for tranquility in the urban area.",
+      "additional_information": "Energy-efficient design with modern finishes. Conveniently located near schools, parks, and shopping centers.",
+      "more_detail": "Project: Urban Oasis House, Semarang Type: Urban House. Location: Semarang, Central Java"
+    },
+    {
+      "id": 12,
+      "title": "TROPICAL LUXURY RETREAT",
+      "price": 2700000,
+      "discount": 27,
+      "image": [
+        "../asset-gambar/gallery/l/1.jpg",
+        "../asset-gambar/gallery/l/2.jpg",
+        "../asset-gambar/gallery/l/3.jpg",
+        "../asset-gambar/gallery/l/4.jpg",
+        "../asset-gambar/gallery/l/5.jpg",
+        "../asset-gambar/gallery/l/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1klm123nop456/view?usp=drive_link",
+      "product_detail": "Luxurious tropical villa with private pool and lush greenery surrounding the property. An exclusive haven for relaxation.",
+      "additional_information": "Tropical architectural style with natural materials. Located in a secluded area for privacy and tranquility.",
+      "more_detail": "Project: Tropical Luxury Retreat, Bali Type: Luxury Villa. Location: Bali, Indonesia"
+    },
+    {
+      "id": 13,
+      "title": "SERENITY HILL RESIDENCE",
+      "price": 2200000,
+      "discount": 21,
+      "image": [
+        "../asset-gambar/gallery/m/1.jpg",
+        "../asset-gambar/gallery/m/2.jpg",
+        "../asset-gambar/gallery/m/3.jpg",
+        "../asset-gambar/gallery/m/4.jpg",
+        "../asset-gambar/gallery/m/5.jpg",
+        "../asset-gambar/gallery/m/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1abc456def789/view?usp=drive_link",
+      "product_detail": "Modern residence located on a hill, offering breathtaking views of the surrounding nature. Designed for comfort and style.",
+      "additional_information": "Modern facade with sleek lines and large windows for natural light. Located close to nature reserves and hiking trails.",
+      "more_detail": "Project: Serenity Hill Residence, Malang Type: Modern House. Location: Malang, East Java"
+    },
+    {
+      "id": 14,
+      "title": "SEAFRONT LUXURY HOUSE",
+      "price": 2900000,
+      "discount": 31,
+      "image": [
+        "../asset-gambar/gallery/n/1.jpg",
+        "../asset-gambar/gallery/n/2.jpg",
+        "../asset-gambar/gallery/n/3.jpg",
+        "../asset-gambar/gallery/n/4.jpg",
+        "../asset-gambar/gallery/n/5.jpg",
+        "../asset-gambar/gallery/n/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1uvw123xyz456/view?usp=drive_link",
+      "product_detail": "Exclusive seafront house with direct beach access. High-end finishes and modern amenities for luxurious living.",
+      "additional_information": "Elegant design with large windows to capture the sea view. Located in a quiet and prestigious coastal area.",
+      "more_detail": "Project: Seafront Luxury House, Lombok Type: Beachfront Villa. Location: Lombok, West Nusa Tenggara"
+    },
+    {
+      "id": 15,
+      "title": "MODERN DOWNTOWN APARTMENT",
+      "price": 2500000,
+      "discount": 23,
+      "image": [
+        "../asset-gambar/gallery/o/1.jpg",
+        "../asset-gambar/gallery/o/2.jpg",
+        "../asset-gambar/gallery/o/3.jpg",
+        "../asset-gambar/gallery/o/4.jpg",
+        "../asset-gambar/gallery/o/5.jpg",
+        "../asset-gambar/gallery/o/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1xyz456abc789/view?usp=drive_link",
+      "product_detail": "Luxurious downtown apartment with high-end facilities, including a rooftop pool and gym. Perfect for urban professionals.",
+      "additional_information": "Modern building with glass facade. Centrally located near business and entertainment districts.",
+      "more_detail": "Project: Modern Downtown Apartment, Jakarta Type: Luxury Apartment. Location: Jakarta, DKI Jakarta"
+    },
+    {
+      "id": 16,
+      "title": "MOUNTAIN VIEW RESIDENCE",
+      "price": 2100000,
+      "discount": 22,
+      "image": [
+        "../asset-gambar/gallery/p/1.jpg",
+        "../asset-gambar/gallery/p/2.jpg",
+        "../asset-gambar/gallery/p/3.jpg",
+        "../asset-gambar/gallery/p/4.jpg",
+        "../asset-gambar/gallery/p/5.jpg",
+        "../asset-gambar/gallery/p/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1rst456uvw789/view?usp=drive_link",
+      "product_detail": "Spacious house with panoramic mountain views. Modern design with large terraces and open living spaces.",
+      "additional_information": "Mountain-style architecture, blending natural materials with modern amenities. Located near popular hiking and outdoor activities.",
+      "more_detail": "Project: Mountain View Residence, Bandung Type: Modern House. Location: Bandung, West Java"
+    },
+    {
+      "id": 17,
+      "title": "LUXURY LAKESIDE VILLA",
+      "price": 2800000,
+      "discount": 29,
+      "image": [
+        "../asset-gambar/gallery/q/1.jpg",
+        "../asset-gambar/gallery/q/2.jpg",
+        "../asset-gambar/gallery/q/3.jpg",
+        "../asset-gambar/gallery/q/4.jpg",
+        "../asset-gambar/gallery/q/5.jpg",
+        "../asset-gambar/gallery/q/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1nop456uvw789/view?usp=drive_link",
+      "product_detail": "Exclusive lakeside villa with private dock and stunning views of the lake. Perfect for luxurious living in nature.",
+      "additional_information": "Architectural design focused on open spaces and natural light. Situated in a quiet and serene area near a natural lake.",
+      "more_detail": "Project: Luxury Lakeside Villa, Bogor Type: Luxury Villa. Location: Bogor, West Java"
+    },
+    {
+      "id": 18,
+      "title": "URBAN GREEN HOUSE",
+      "price": 1800000,
+      "discount": 16,
+      "image": [
+        "../asset-gambar/gallery/r/1.jpg",
+        "../asset-gambar/gallery/r/2.jpg",
+        "../asset-gambar/gallery/r/3.jpg",
+        "../asset-gambar/gallery/r/4.jpg",
+        "../asset-gambar/gallery/r/5.jpg",
+        "../asset-gambar/gallery/r/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1def123ghi456/view?usp=drive_link",
+      "product_detail": "Eco-friendly house in an urban setting, featuring sustainable design and energy-efficient systems. Ideal for green living in the city.",
+      "additional_information": "Green architecture with energy-efficient features. Located near parks and urban green spaces.",
+      "more_detail": "Project: Urban Green House, Surabaya Type: Eco-Friendly House. Location: Surabaya, East Java"
+    },
+    {
+      "id": 19,
+      "title": "BEACHFRONT PARADISE VILLA",
+      "price": 3000000,
+      "discount": 33,
+      "image": [
+        "../asset-gambar/gallery/s/1.jpg",
+        "../asset-gambar/gallery/s/2.jpg",
+        "../asset-gambar/gallery/s/3.jpg",
+        "../asset-gambar/gallery/s/4.jpg",
+        "../asset-gambar/gallery/s/5.jpg",
+        "../asset-gambar/gallery/s/6.jpg"
+      ],
+      "link": "https://drive.google.com/file/d/1ghi789jkl123/view?usp=drive_link",
+      "product_detail": "Luxurious beachfront villa with private pool and direct beach access. Perfect for a tropical getaway.",
+      "additional_information": "Modern tropical design with high-end finishes and spacious outdoor living areas. Located in an exclusive beachfront area.",
+      "more_detail": "Project: Beachfront Paradise Villa, Bali Type: Luxury Villa. Location: Bali, Indonesia"
+    }
+  ]
+  

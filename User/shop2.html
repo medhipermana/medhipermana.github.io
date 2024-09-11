@@ -44,6 +44,107 @@
 			border-color: #007bff;
 			/* Change this to the active link border color */
 		}
+
+		.button {
+			display: inline-block;
+			margin: 4px 2px;
+			font-size: 14px;
+			padding-left: 32px;
+			padding-right: 32px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			color: white;
+			text-decoration: none;
+			cursor: pointer;
+			-moz-user-select: none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		.button:hover {
+			transition-duration: 0.4s;
+			-moz-transition-duration: 0.4s;
+			-webkit-transition-duration: 0.4s;
+			-o-transition-duration: 0.4s;
+			background-color: white;
+			color: black;
+		}
+
+		.search-container {
+			position: relative;
+			display: inline-block;
+			margin: 4px 2px;
+			height: 50px;
+			width: 50px;
+			/* vertical-align: bottom; */
+		}
+
+		.mglass {
+			display: inline-block;
+			pointer-events: none;
+			transform: rotate(-45deg);
+			-webkit-transform: rotate(-45deg);
+			-moz-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+		}
+
+		.searchbutton {
+			position: absolute;
+			font-size: 22px;
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		.search:focus+.searchbutton {
+			transition-duration: 0.4s;
+			-moz-transition-duration: 0.4s;
+			-webkit-transition-duration: 0.4s;
+			-o-transition-duration: 0.4s;
+			background-color: white;
+			color: black;
+		}
+
+		.search {
+			position: absolute;
+			left: 49px;
+			/* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+			background-color: white;
+			
+			outline: none;
+			/* border: none; */
+			padding: 0;
+			width: 0;
+			height: 100%;
+			z-index: 10;
+			transition-duration: 0.4s;
+			-moz-transition-duration: 0.4s;
+			-webkit-transition-duration: 0.4s;
+			-o-transition-duration: 0.4s;
+		}
+
+		.search:focus {
+			width: 250px;
+			/* Bar width+1px */
+			padding: 0 16px 0 0;
+			border: 1px solid rgba(0, 0, 0, 0.137);
+			border-radius: 3rem;
+		}
+
+		.expandright {
+			left: auto;
+			right: 49px;
+			/* Button width-1px */
+		}
+
+		.expandright:focus {
+			padding: 0 0 0 16px;
+			border: 1px solid rgba(0, 0, 0, 0.137);
+		}
 	</style>
 
 	<!-- Responsive -->
@@ -61,7 +162,7 @@
 		<header class="main-header header-style-four">
 
 			<!-- Header Lower -->
-			
+
 			<!-- End Header Lower -->
 
 			<!-- Sticky Header  -->
@@ -73,44 +174,44 @@
 							<a href="shop2.html" title=""><img src="images/logo.png" alt="" title=""></a>
 						</div>
 
-						
 
-							<!-- Main Menu -->
-							<nav class="main-menu show navbar-expand-md">
-								<div class="navbar-header">
-									<button class="navbar-toggler" type="button" data-toggle="collapse"
-										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-										aria-expanded="false" aria-label="Toggle navigation">
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
 
-								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">
-										<li class="">										
-											<a href="shop2.html">								
-												<i class="fa fa-shopping-basket mx-1"></i>																			
-												Shop</a>
-										</li>
-										<li><a href="#contact-info">
+						<!-- Main Menu -->
+						<nav class="main-menu show navbar-expand-md">
+							<div class="navbar-header">
+								<button class="navbar-toggler" type="button" data-toggle="collapse"
+									data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+									aria-expanded="false" aria-label="Toggle navigation">
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+							</div>
+
+							<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+								<ul class="navigation clearfix">
+									<li class="">
+										<a href="shop2.html">
+											<i class="fa fa-shopping-basket mx-1"></i>
+											Shop</a>
+									</li>
+									<li><a href="#contact-info">
 											<i class="fa fa-phone  mx-1"></i>
-												Contact us</a></li>
-										<li class="">
-											
-											<a href="FAQ.html">
-												<i class="fa fa-question-circle mx-1"></i>
-												FAQ</a>
-											 
-										</li>
-									</ul>
-								</div>
+											Contact us</a></li>
+									<li class="">
 
-								
+										<a href="FAQ.html">
+											<i class="fa fa-question-circle mx-1"></i>
+											FAQ</a>
 
-							</nav>
-							<!-- Main Menu End-->
+									</li>
+								</ul>
+							</div>
+
+
+
+						</nav>
+						<!-- Main Menu End-->
 
 
 
@@ -118,10 +219,13 @@
 						<div class="options-box d-flex align-items-center">
 
 							<!-- Search Box -->
-							<div class="search-box-outer">
-								<div class="search-box-btn"><span class="flaticon-search-1"></span></div>
-							</div>
-							<nav class="main-menu show navbar-expand-md">
+							<!-- <div class="search-box-outer">
+								<form action="/search" method="get">
+									<input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+									<label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
+								  </form>
+							</div> -->
+							<nav class="main-menu show d-flex align-items-center justify-content-center">
 								<div class="navbar-header">
 									<button class="navbar-toggler" type="button" data-toggle="collapse"
 										data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -131,36 +235,31 @@
 										<span class="icon-bar"></span>
 									</button>
 								</div>
-								
+								<div class="search-container">
+									<form  method="post" action="shop2.html" style="padding: 0 !important;">
+										<input class="search expandright" id="searchright"type="text" name="search-field"
+											placeholder="Search">
+										<label class="button searchbutton" for="searchright"><span
+												class="mglass">&#9906;</span></label>
+									</form>
+								</div>
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-									<ul class="navigation clearfix">									
-										<li class="m-2"><img width=35" class="rounded" src="images/icons/user.png" alt="">
-											<li class="dropdown"><a href="#">Medhi</a>
-												<ul>
-													<li><a href="editprofile.html">Edit Profile</a></li>
-													<li><a href="history.html">History Payment</a></li>
-													<li><a href="shop.html">Logout</a></li>
-												</ul>
-											</li>												 
+
+									<ul class="navigation clearfix">
+										<li class="m-2"><img width=35" class="rounded" src="images/icons/user.png"
+												alt="">
+										<li class="dropdown"><a href="#">Medhi</a>
+											<ul>
+												<li><a href="editprofile.html">Edit Profile</a></li>
+												<li><a href="history.html">History Payment</a></li>
+												<li><a href="shop.html">Logout</a></li>
+											</ul>
+										</li>
 									</ul>
 								</div>
-								<!-- <div class="d-flex flex-row-reverse bd-highlight">
-									<div class="p-2 bd-highlight">
-										<ul class="navigation clearfix">
-											<li class="dropdown"><a href="#">User1</a></li>
-										</ul>
-									</div>
-									<div class="p-2 bd-highlight">
-										<div class="widget-content-left mr-3">
-											<div class="widget-content-left">
-												<img width="42" class="rounded" src="images/icons/user.png" alt="">
-											</div>
-										</div>
-									</div>
-								</div> -->
 							</nav>
-							
-						
+
+
 
 							<!-- User Box -->
 
@@ -427,17 +526,17 @@
 	<!-- End PageWrapper -->
 
 	<!-- Search Popup -->
-	<div class="search-popup">
+	<!-- <div class="search-popup">
 		<div class="color-layer"></div>
 		<button class="close-search"><span class="fa fa-arrow-up"></span></button>
-		<form method="post" action="shop2.html"> <!-- Change action to the desired page -->
+		<form method="post" action="shop2.html"> 
 			<div class="form-group">
 				<input type="text" name="search-field" value="" placeholder="Search Here" required="">
 				<button type="submit"><i class="fa fa-search"></i></button>
 			</div>
 		</form>
-	</div>
-	
+	</div> -->
+
 	<!-- End Search Popup -->
 
 	<!-- Scroll To Top -->
@@ -466,26 +565,26 @@
 	<script>
 		var currentPage = 1;
 		var productsPerPage = 12; // Change this to the number of products per page
-	
+
 		function changePage(page) {
 			currentPage = page;
 			showProducts();
-	
+
 			// Remove "active" class from all pagination links
 			var paginationLinks = document.querySelectorAll('#pagination li a');
 			paginationLinks.forEach(link => link.classList.remove('active'));
-	
+
 			// Add "active" class to the clicked pagination link
 			paginationLinks[currentPage].classList.add('active');
 		}
-	
+
 		function prevPage() {
 			if (currentPage > 1) {
 				currentPage--;
 				showProducts();
 			}
 		}
-	
+
 		function nextPage() {
 			// Assuming data.length is the total number of products
 			var totalPages = Math.ceil(data.length / productsPerPage);
@@ -494,7 +593,7 @@
 				showProducts();
 			}
 		}
-	
+
 		function formatToRupiah(angka) {
 			if (typeof angka === "string") {
 				angka = parseFloat(angka);
@@ -508,25 +607,28 @@
 				return "Rp. 0";
 			}
 		}
-	
+
 		function showProducts(searchQuery = "") {
 			fetch('../data_produk.json')
 				.then(response => response.json())
 				.then(data => {
 					var produkContainer = document.getElementById('list-product');
 					var afterDiscount = 0;
-	
+
 					var filteredProducts = data.filter(produk => {
 						// Menggunakan toLowerCase() untuk pencarian case-insensitive
 						return produk.title.toLowerCase().includes(searchQuery.toLowerCase());
 					});
-	
+
 					produkContainer.innerHTML = ""; // Clear previous products
-	
+
 					filteredProducts.forEach(produk => {
 						afterDiscount = (produk.price / 100) * produk.discount;
 						var shopItem = document.createElement('div');
 						shopItem.className = 'shop-item col-lg-4 col-md-4 col-sm-12';
+						console.log(
+							produk.image[0]
+						)
 						shopItem.innerHTML = `
 							<div class="inner-box">
 								<div class="image">
@@ -552,28 +654,28 @@
 							</div>
 							<div class="vector-icon" style="background-image: url(images/icons/vector-3.png)"></div>
 						`;
-	
+
 						widgetContent.innerHTML = widgetHTML;
 						produkContainer.appendChild(shopItem);
-	
+
 						// Trigger reflow to apply CSS transition
 						void shopItem.offsetWidth;
-	
+
 						// Add visible class to apply opacity transition
-						shopItem.classList.add('visible');						
+						shopItem.classList.add('visible');
 					});
 				})
 				.catch(error => console.error('Error fetching data:', error));
 		}
-	
+
 		// Function to close the search popup
 		function closeSearchPopup() {
 			$("body").removeClass('search-active');
-			
+
 		}
-	
+
 		// Function to handle search submission
-		document.querySelector('.search-popup form').addEventListener('submit', function(event) {
+		document.querySelector('.search-container form').addEventListener('submit', function (event) {
 			event.preventDefault();
 			var searchQuery = this.querySelector('input[name="search-field"]').value;
 			showProducts(searchQuery);
@@ -581,7 +683,8 @@
 		});
 
 		// Event listener for handling keypress in the search field
-		document.querySelector('.search-popup form input[name="search-field"]').addEventListener('keypress', function(event) {
+		document.querySelector('.search-container form input[name="search-field"]').addEventListener('keypress', function (
+		event) {
 			// Jika tombol Enter ditekan (keyCode 13)
 			if (event.keyCode === 13) {
 				var searchQuery = this.value;
@@ -590,10 +693,9 @@
 			}
 		});
 
-	
+
 		// Initial load
 		showProducts();
-	
 	</script>
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
